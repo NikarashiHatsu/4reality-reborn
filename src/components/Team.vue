@@ -57,7 +57,7 @@
                 <div class="col-span-12 sm:col-span-10 lg:col-span-11
                             h-screen sm:h-auto
                             border-r-0 sm:border-r" style="height: 625px">
-                    <Karen :charData="gen1[1]" />
+                    <Karen :charData="gen1[2]" />
                     <!-- <YuaDeyanara :charData="utaite[1]" /> -->
                     <!-- <AuraLily :charData="utaite[0]" /> -->
                 </div>
@@ -81,9 +81,35 @@
             return {
                 gen1: [
                     {
-                        name: 'Raihan',
-                        avatar: '/assets/avatar/raihan.png',
-                        char: '/assets/characters/raihan.png',
+                        name: 'Kurokami Itsuki',
+                        avatar: '/assets/avatar/kurokami-itsuki.png',
+                        char: '/assets/characters/kurokami-itsuki.png',
+                        colorScheme: '#000000',
+                        bio: "",
+                        palettes: [
+                            '#000000',
+                            '#000000',
+                            '#000000',
+                            '#000000',
+                            '#000000',
+                        ],
+                        facebook: {
+                            userName: 'Kurokami Itsuki',
+                            link: 'https://web.facebook.com/kurokami.itsuki.3',
+                        },
+                        twitter: {
+                            userName: 'Kurokami Itsuki - イツキ「4 REALITY」',
+                            link: 'https://twitter.com/itsuki4R',
+                        },
+                        youtube: {
+                            userName: 'Itsuki Ch. イツキ「4 REALITY」 ',
+                            link: 'https://www.youtube.com/channel/UCIpvTuGE_fennkL2mXah9Pg',
+                        },
+                    },
+                    {
+                        name: 'Raihan Ikeda',
+                        avatar: '/assets/avatar/raihan-ikeda.png',
+                        char: '/assets/characters/raihan-ikeda.png',
                         colorScheme: '#B65D51',
                         bio: "",
                         palettes: [
@@ -93,6 +119,18 @@
                             '#000000',
                             '#000000',
                         ],
+                        facebook: {
+                            userName: 'Raihan Ikeda',
+                            link: 'https://web.facebook.com/raihan.ikeda.5',
+                        },
+                        twitter: {
+                            userName: 'Raihan Ikeda イケダ「4 REALITY」',
+                            link: 'https://twitter.com/RaihanIkeda',
+                        },
+                        youtube: {
+                            userName: ' Raihan Ikeda Ch. イケダ「4 REALITY」',
+                            link: 'https://www.youtube.com/RaihanIkeda4RCh',
+                        },
                     },
                     {
                         name: 'Karen',
@@ -107,6 +145,18 @@
                             '#473A2A',
                             '#22180E',
                         ],
+                        facebook: {
+                            userName: 'Karen',
+                            link: 'https://web.facebook.com/kkarennaws',
+                        },
+                        twitter: {
+                            userName: 'Karen - カレン「4 REALITY」',
+                            link: 'https://twitter.com/kareen4r',
+                        },
+                        youtube: {
+                            userName: 'Karen ch. カレン「4 REALITY」',
+                            link: 'https://www.youtube.com/Karen_naws',
+                        },
                     },
                     {
                         name: 'Vyula',
@@ -121,6 +171,18 @@
                             '#000000',
                             '#000000',
                         ],
+                        facebook: {
+                            userName: 'Vyula',
+                            link: 'https://web.facebook.com/vel.vet.12576',
+                        },
+                        twitter: {
+                            userName: 'Vyula ビューラ 「4 REALITY」',
+                            link: 'https://twitter.com/Vyula4R',
+                        },
+                        youtube: {
+                            userName: ' Vyula Ch. ビューラ 「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCO4MJHNZ-nurM3ZRj8gL5Yw',
+                        },
                     }
                 ],
                 gen2: [
@@ -137,6 +199,18 @@
                             '#000000',
                             '#000000',
                         ],
+                        facebook: {
+                            userName: 'Mizuki Aoi',
+                            link: 'https://web.facebook.com/aoi.mizuki.7923',
+                        },
+                        twitter: {
+                            userName: 'Aoi - ミズキアオイ「4REALITY」',
+                            link: 'https://twitter.com/mizukiaoii',
+                        },
+                        youtube: {
+                            userName: 'Aoi ch. ミズキアオイ「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCpzRn1NafleJlKUMRg0Rdrw',
+                        },
                     }
                 ],
                 utaite: [
@@ -153,6 +227,18 @@
                             '#AAC8E5',
                             '#85AFD9',
                         ],
+                        facebook: {
+                            userName: 'Aura Lily (アウラリリ)',
+                            link: 'https://web.facebook.com/yuzuki.aurasha',
+                        },
+                        twitter: {
+                            userName: 'Aura Lily - 「4 REALITY」',
+                            link: 'https://twitter.com/AuraLilyy',
+                        },
+                        youtube: {
+                            userName: 'Aura Lily Ch. アウラリリ 「4 REALITY」 ',
+                            link: 'https://www.youtube.com/channel/UCKE7tk9WzOW666V0xLs8UWw',
+                        },
                     },
                     {
                         name: 'Yua Deyanara',
@@ -167,6 +253,18 @@
                             '#F8B6D0',
                             '#E19EBA',
                         ],
+                        facebook: {
+                            userName: 'Yua',
+                            link: 'https://web.facebook.com/yua.deyanara',
+                        },
+                        twitter: {
+                            userName: 'Yua Deyanara - 「4 REALITY」',
+                            link: 'https://twitter.com/yuadeyanara_',
+                        },
+                        youtube: {
+                            userName: 'Yua Ch. ユア 「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCgjuENo4JAORGmTZDDKmx8A',
+                        },
                     },
                 ]
             }
