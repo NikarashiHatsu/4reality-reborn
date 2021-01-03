@@ -56,10 +56,10 @@
 
                 <div class="col-span-12 sm:col-span-10 lg:col-span-11
                             h-screen sm:h-auto
-                            border-r-0 sm:border-r" style="height: 600px">
-                    <!-- <Karen :charData="gen1[1]" /> -->
+                            border-r-0 sm:border-r" style="height: 625px">
+                    <Karen :charData="gen1[1]" />
                     <!-- <YuaDeyanara :charData="utaite[1]" /> -->
-                    <AuraLily :charData="utaite[0]" />
+                    <!-- <AuraLily :charData="utaite[0]" /> -->
                 </div>
             </div>
         </div>
