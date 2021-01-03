@@ -1,0 +1,21 @@
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar, .hero, .about, .sans-serif {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.serif {
+  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+.hero-title, .hero-description {
+  letter-spacing: 0.2em;
+}
+
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
