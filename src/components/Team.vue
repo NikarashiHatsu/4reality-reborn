@@ -12,15 +12,16 @@
                     class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
                             w-1/3 sm:w-auto
                             rounded-t-md
-                            text-sm sm:text-base">
+                            text-xs sm:text-base">
                 4R Gen 1
             </button>
             <button :style="(gen2Toggled) ? toggledButtonColor : ''"
                     @click="toggleGen2()" 
                     class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                            w-1/3 sm:w-auto mx-4
+                            w-1/3 sm:w-auto 
+                            mx-0 sm:mx-4
                             rounded-t-md
-                            text-sm sm:text-base">
+                            text-xs sm:text-base">
                 4R Gen 2
             </button>
             <button :style="(utaiteToggled) ? toggledButtonColor : ''"
@@ -28,7 +29,7 @@
                     class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r
                             w-1/3 sm:w-auto
                             rounded-t-md
-                            text-sm sm:text-base">
+                            text-xs sm:text-base">
                 Utaite
             </button>
         </div>
@@ -315,8 +316,8 @@
                             userName: 'Aura Lily Ch. アウラリリ 「4 REALITY」 ',
                             link: 'https://www.youtube.com/channel/UCKE7tk9WzOW666V0xLs8UWw',
                         },
-                        tagline: '',
-                        motto: '',
+                        tagline: 'ABWANG',
+                        motto: 'Singing, Rebahan, Masuk Dalam Toples',
                     },
                     {
                         name: 'Yua Deyanara',
