@@ -6,7 +6,24 @@
             </h5>
         </div>
 
-        <div class="border-t border-b mt-12">
+        <div class="flex mt-12">
+            <button :class="{ 'bg-gray-100': gen1Toggled }"
+                    @click="toggleGen1()" 
+                    class="px-6 py-3 transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r">
+                4R Gen 1
+            </button>
+            <button :class="{ 'bg-gray-100': gen2Toggled }"
+                    @click="toggleGen2()" 
+                    class="px-6 py-3 transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r">
+                4R Gen 2
+            </button>
+            <button :class="{ 'bg-gray-100': utaiteToggled }"
+                    @click="toggleUtaite()" 
+                    class="px-6 py-3 transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r">
+                Utaite
+            </button>
+        </div>
+        <div class="border-t border-b">
             <div class="grid grid-cols-12 grid-flow-row max-w-7xl mx-auto" style="height: auto;">
                 <div class="border-l
                             border-t sm:border-t-0
@@ -44,13 +61,39 @@
                                 transform rotate-90 sm:rotate-0
                                 top-4 sm:top-2 
                                 right-0 sm:right-2" src="/assets/particles/rectangles-dot.png" />
+
                     <div class="absolute flex w-full justify-center items-center
-                                flex-row sm:flex-col">
+                                flex-row sm:flex-col"
+                         v-if="gen1Toggled">
                         <img v-for="(chars, index) in gen1" 
                             :key="index" 
                             :src="chars.avatar"
+                            @click="changeGen1(index)"
                             class="w-16 h-16 object-fit
-                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0">
+                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
+                                    cursor-pointer">
+                    </div>
+                    <div class="absolute flex w-full justify-center items-center
+                                flex-row sm:flex-col"
+                         v-if="gen2Toggled">
+                        <img v-for="(chars, index) in gen2" 
+                            :key="index" 
+                            :src="chars.avatar"
+                            @click="changeGen2(index)"
+                            class="w-16 h-16 object-fit
+                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
+                                    cursor-pointer">
+                    </div>
+                    <div class="absolute flex w-full justify-center items-center
+                                flex-row sm:flex-col"
+                         v-if="utaiteToggled">
+                        <img v-for="(chars, index) in utaite" 
+                            :key="index" 
+                            :src="chars.avatar"
+                            @click="changeUtaiteIndex(index)"
+                            class="w-16 h-16 object-fit
+                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
+                                    cursor-pointer">
                     </div>
                 </div>
 
@@ -58,9 +101,9 @@
                             h-screen sm:h-auto
                             border-r-0 sm:border-r
                             overflow-hidden" style="height: 625px">
-                    <Karen :charData="gen1[2]" />
-                    <!-- <YuaDeyanara :charData="utaite[1]" /> -->
-                    <!-- <AuraLily :charData="utaite[0]" /> -->
+                    <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
+                    <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
+                    <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
                 </div>
             </div>
         </div>
@@ -80,6 +123,13 @@
         },
         data() {
             return {
+                gen1Toggled: true,
+                gen2Toggled: false,
+                utaiteToggled: false,
+                gen1Index: 2,
+                gen2Index: 0,
+                utaiteIndex: 0,
+                
                 gen1: [
                     {
                         name: 'Kurokami Itsuki',
@@ -289,6 +339,40 @@
                         motto: '',
                     },
                 ]
+            }
+        },
+        methods: {
+            changeGen1(index) {
+                this.gen1Index = index;
+            },
+
+            changeGen2(index) {
+                this.gen2Index = index;
+            },
+
+            changeUtaiteIndex(index) {
+                this.utaiteIndex = index;
+            },
+
+            toggleGen1() {
+                this.reset();
+                this.gen1Toggled = true;
+            },
+
+            toggleGen2() {
+                this.reset();
+                this.gen2Toggled = true;
+            },
+
+            toggleUtaite() {
+                this.reset();
+                this.utaiteToggled = true;
+            },
+
+            reset() {
+                this.gen1Toggled = false;
+                this.gen2Toggled = false;
+                this.utaiteToggled = false;
             }
         }
     }
