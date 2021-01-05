@@ -4,6 +4,7 @@
     <Hero />
     <About />
     <Team />
+    <SocialMedia />
     <Footer />
   </div>
 </template>
@@ -13,6 +14,7 @@ import About from "./components/About.vue";
 import Footer from "./components/Footer.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
+import SocialMedia from "./components/SocialMedia.vue";
 import Team from "./components/Team.vue";
 
 export default {
@@ -22,6 +24,7 @@ export default {
     Footer,
     Hero,
     Navbar,
+    SocialMedia,
     Team,
   },
   data() {
