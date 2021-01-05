@@ -33,14 +33,23 @@
             {{ charData.name }}
         </h1>
         <p class="absolute z-10 serif text-gray-700 tracking-widest text-right
+                    mt-4 md:mt-0
                     text-sm md:text-base
                     lg:left-72
                     right-10 lg:right-0
                     top-32 md:top-40
-                    w-64 lg:w-80
+                    w-64
                     leading-relaxed
                     hidden sm:block">
             {{ charData.bio }}
+        </p>
+        <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
+                    text-xl break-words
+                    left-4 md:left-32
+                    top-32 md:top-80
+                    w-4 lg:w-80
+                    leading-relaxed">
+            {{ charData.race }}
         </p>
 
         <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
