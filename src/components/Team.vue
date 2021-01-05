@@ -105,6 +105,8 @@
                             userName: 'Itsuki Ch. イツキ「4 REALITY」 ',
                             link: 'https://www.youtube.com/channel/UCIpvTuGE_fennkL2mXah9Pg',
                         },
+                        tagline: '',
+                        motto: '',
                     },
                     {
                         name: 'Raihan Ikeda',
@@ -131,6 +133,8 @@
                             userName: ' Raihan Ikeda Ch. イケダ「4 REALITY」',
                             link: 'https://www.youtube.com/RaihanIkeda4RCh',
                         },
+                        tagline: '',
+                        motto: '',
                     },
                     {
                         name: 'Karen',
@@ -157,6 +161,8 @@
                             userName: 'Karen ch. カレン「4 REALITY」',
                             link: 'https://www.youtube.com/Karen_naws',
                         },
+                        tagline: 'Momentum',
+                        motto: 'Gaming, Programming, Sleeping',
                     },
                     {
                         name: 'Vyula',
@@ -183,6 +189,8 @@
                             userName: ' Vyula Ch. ビューラ 「4 REALITY」',
                             link: 'https://www.youtube.com/channel/UCO4MJHNZ-nurM3ZRj8gL5Yw',
                         },
+                        tagline: '',
+                        motto: '',
                     }
                 ],
                 gen2: [
@@ -211,6 +219,8 @@
                             userName: 'Aoi ch. ミズキアオイ「4 REALITY」',
                             link: 'https://www.youtube.com/channel/UCpzRn1NafleJlKUMRg0Rdrw',
                         },
+                        tagline: '',
+                        motto: '',
                     }
                 ],
                 utaite: [
@@ -239,6 +249,8 @@
                             userName: 'Aura Lily Ch. アウラリリ 「4 REALITY」 ',
                             link: 'https://www.youtube.com/channel/UCKE7tk9WzOW666V0xLs8UWw',
                         },
+                        tagline: '',
+                        motto: '',
                     },
                     {
                         name: 'Yua Deyanara',
@@ -265,6 +277,8 @@
                             userName: 'Yua Ch. ユア 「4 REALITY」',
                             link: 'https://www.youtube.com/channel/UCgjuENo4JAORGmTZDDKmx8A',
                         },
+                        tagline: '',
+                        motto: '',
                     },
                 ]
             }
