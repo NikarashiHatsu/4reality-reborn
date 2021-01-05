@@ -7,9 +7,6 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    letterSpacing: {
-      'tagline': '0.45em',
-    },
     rotate: {
       '-60': '-60deg',
       '30': '30deg',
@@ -25,10 +22,15 @@ module.exports = {
         '110': '27.5rem',
         '112': '28rem',
         '120': '30rem',
+        '124': '31rem',
         '160': '40rem',
         '200': '50rem',
         '240': '60rem',
         '280': '70rem',
+      },
+      letterSpacing: {
+        'name': '0.25em',
+        'tagline': '0.45em',
       },
       colors: {
         gray: colors.trueGray,
