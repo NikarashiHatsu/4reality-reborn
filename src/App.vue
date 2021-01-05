@@ -4,6 +4,7 @@
     <Hero />
     <About />
     <Team />
+    <ContactUs />
     <SocialMedia />
     <Footer />
   </div>
@@ -11,6 +12,7 @@
 
 <script>
 import About from "./components/About.vue";
+import ContactUs from "./components/ContactUs.vue";
 import Footer from "./components/Footer.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
@@ -21,6 +23,7 @@ export default {
   name: 'App',
   components: {
     About,
+    ContactUs,
     Footer,
     Hero,
     Navbar,
