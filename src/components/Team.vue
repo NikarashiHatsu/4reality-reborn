@@ -112,6 +112,7 @@
                             border-r-0 sm:border-r
                             overflow-hidden" style="height: 625px">
                     <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
+                    <RaihanIkeda v-if="gen1Index == 1 && gen1Toggled" :charData="gen1[1]" />
                     <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
                     <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                     <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
@@ -125,6 +126,7 @@
     import AuraLily from "./charsets/AuraLily.vue";
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
+    import RaihanIkeda from "./charsets/RaihanIkeda.vue";
     import YuaDeyanara from "./charsets/YuaDeyanara.vue";
 
     export default {
@@ -132,6 +134,7 @@
             AuraLily,
             Karen,
             KurokamiItsuki,
+            RaihanIkeda,
             YuaDeyanara,
         },
         data() {
@@ -181,11 +184,11 @@
                         bio: "",
                         race: 'Human',
                         palettes: [
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
+                            '#C6685A',
+                            '#B55C50',
+                            '#8F4D42',
+                            '#825B4F',
+                            '#69483F',
                         ],
                         facebook: {
                             userName: 'Raihan Ikeda',
@@ -199,8 +202,8 @@
                             userName: ' Raihan Ikeda Ch. イケダ「4 REALITY」',
                             link: 'https://www.youtube.com/RaihanIkeda4RCh',
                         },
-                        tagline: '',
-                        motto: '',
+                        tagline: 'Trading Mang',
+                        motto: 'Interaction with people, Playing Game, Trading',
                     },
                     {
                         name: 'Karen',
