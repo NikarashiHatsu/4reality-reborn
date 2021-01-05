@@ -6,20 +6,29 @@
             </h5>
         </div>
 
-        <div class="flex mt-12">
-            <button :class="{ 'bg-gray-100': gen1Toggled }"
+        <div class="flex mt-12 justify-center">
+            <button :style="(gen1Toggled) ? toggledButtonColor : ''"
                     @click="toggleGen1()" 
-                    class="px-6 py-3 transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r">
+                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
+                            w-1/3 sm:w-auto
+                            rounded-t-md
+                            text-sm sm:text-base">
                 4R Gen 1
             </button>
-            <button :class="{ 'bg-gray-100': gen2Toggled }"
+            <button :style="(gen2Toggled) ? toggledButtonColor : ''"
                     @click="toggleGen2()" 
-                    class="px-6 py-3 transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r">
+                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
+                            w-1/3 sm:w-auto mx-4
+                            rounded-t-md
+                            text-sm sm:text-base">
                 4R Gen 2
             </button>
-            <button :class="{ 'bg-gray-100': utaiteToggled }"
+            <button :style="(utaiteToggled) ? toggledButtonColor : ''"
                     @click="toggleUtaite()" 
-                    class="px-6 py-3 transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r">
+                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r
+                            w-1/3 sm:w-auto
+                            rounded-t-md
+                            text-sm sm:text-base">
                 Utaite
             </button>
         </div>
@@ -373,6 +382,30 @@
                 this.gen1Toggled = false;
                 this.gen2Toggled = false;
                 this.utaiteToggled = false;
+            }
+        },
+
+        computed: {
+            toggledButtonColor() {
+                let usedSet;
+                let indexSet;
+
+                if (this.gen1Toggled) {
+                    usedSet = this.gen1;
+                    indexSet = this.gen1Index;
+                }
+
+                if (this.gen2Toggled) {
+                    usedSet = this.gen2;
+                    indexSet = this.gen2Index;
+                }
+
+                if (this.utaiteToggled) {
+                    usedSet = this.utaite;
+                    indexSet = this.utaiteIndex;
+                }
+
+                return `background-color: ${usedSet[indexSet].palettes[2]}; color: white;`;
             }
         }
     }
