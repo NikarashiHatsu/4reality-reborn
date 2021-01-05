@@ -345,8 +345,8 @@
                             userName: 'Yua Ch. ユア 「4 REALITY」',
                             link: 'https://www.youtube.com/channel/UCgjuENo4JAORGmTZDDKmx8A',
                         },
-                        tagline: '',
-                        motto: '',
+                        tagline: 'HWEEE',
+                        motto: 'Singing, updating her database',
                     },
                 ]
             }

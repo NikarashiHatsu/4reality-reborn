@@ -7,29 +7,118 @@
             <div :style="`background-color: ${charData.palettes[3]}`" class="absolute top-8 left-0 w-6 h-6"></div>
             <div :style="`background-color: ${charData.palettes[4]}`" class="absolute top-16 left-0 w-6 h-6"></div>
         </div>
+
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
-                    background-position-y: 4rem;
-                    background-position-x: 50%;
-                    background-size: 110%;`" class="absolute h-full w-96 z-10"></div>
-        <h1 style="letter-spacing: 0.625em; left: 27rem;" class="absolute serif text-7xl uppercase top-16 left-96 text-gray-700">
+                    background-position-y: 0rem;
+                    background-size: 100%;`" 
+            class="absolute h-full z-20
+                    -left-4 sm:left-0 md:-left-4
+                    w-72 sm:w-96
+                    top-20 sm:top-8"></div>
+        <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-tagline z-10
+                    text-2xl sm:text-7xl
+                    w-96 sm:w-auto
+                    top-12 sm:top-18
+                    lg:left-112
+                    -right-14 sm:right-0 md:right-0 lg:right-0
+                    break-normal sm:break-words">
             {{ charData.name.split(' ')[0] }}
-        </h1>
-        <h1 style="letter-spacing: 0.625em;" class="absolute serif text-3xl uppercase top-36 left-72 text-gray-700">
+            <span class="sm:hidden">
+                {{ charData.name.split(' ')[1] }}
+            </span>
+        </h2>
+        <h4 class="absolute serif uppercase text-gray-700 break-words tracking-tagline z-10
+                    text-3xl
+                    top-32
+                    ml-8 md:ml-0
+                    lg:left-72
+                    sm:right-6 md:right-28 lg:right-0
+                    hidden sm:block">
+            {{ charData.name.split(' ')[1] }}
+        </h4>
+        <h1 class="absolute z-10 serif uppercase bottom-16
+                    text-6xl md:text-8xl
+                    -left-4 md:-left-8
+                    opacity-10
+                    hidden sm:block" style="letter-spacing: 0.625em" >
             {{ charData.name.split(' ')[1] }}
         </h1>
-        <h1 style="letter-spacing: 0.625em" class="absolute z-0 serif text-8xl uppercase bottom-12 left-12 text-gray-200">
-            {{ charData.name.split(' ')[0] }}
-        </h1>
-        <p class="absolute top-56 left-72 w-96 z-0 serif text-gray-700 tracking-widest text-right">
+        <p class="absolute z-10 serif text-gray-700 tracking-widest text-right
+                    text-sm md:text-base
+                    lg:left-72
+                    right-10 lg:right-0
+                    sm:top-48 md:top-56
+                    sm:w-56 md:w-80 lg:w-96
+                    leading-relaxed
+                    hidden sm:block">
             {{ charData.bio }}
         </p>
+        <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-center
+                    text-2xl break-words
+                    left-4 md:left-5 lg:left-32
+                    top-32 md:top-32 lg:top-96
+                    w-4 lg:w-80
+                    leading-relaxed">
+            {{ charData.race }}
+        </p>
+
+        <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
+            <div :style="'background-color: ' + charData.palettes[3]"
+                 class="absolute w-160 h-240 transform rotate-30 z-0
+                        md:-top-26 lg:-top-12 
+                        -right-112 sm:-right-112 md:-right-96 lg:-right-32" id="bg-1"></div>
+            <div class="absolute w-4 bg-white h-240 transform rotate-30 z-10
+                        md:-top-32 lg:-top-32 
+                        right-52 sm:right-52 md:right-64 lg:right-120" id="stripe"></div>
+            <div :style="'background-color: ' + charData.palettes[1]"
+                 class="absolute w-160 h-240 transform rotate-30 z-0
+                        md:-top-24 lg:-top-20 
+                        -right-120 sm:-right-120 md:-right-100 lg:-right-44" id="bg-2"></div>
+        </div>
+
+        <div class="right-0 bottom-0 absolute z-20">
+            <div class="flex flex-col items-end m-4">
+                <a :href="charData.facebook.link"
+                    class="flex items-center serif opacity-50"
+                    _target="_blank">
+                    <span class="mr-4 text-xs md:text-base">{{ charData.facebook.userName }}</span>
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a :href="charData.twitter.link"
+                    class="flex items-center serif opacity-50 mt-2"
+                    _target="_blank">
+                    <span class="mr-1 text-xs md:text-base">{{ charData.twitter.userName }}</span>
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a :href="charData.youtube.link"
+                    class="flex items-center serif opacity-50 mt-2"
+                    _target="_blank">
+                    <span class="mr-1 text-xs md:text-base">{{ charData.youtube.userName }}</span>
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute tracking-widest transform -rotate-60
+                    md:pt-8 lg:pt-0
+                    opacity-25
+                    ml-4 sm:ml-0
+                    -right-96 md:-right-64 lg:-right-12 
+                    bottom-64 md:bottom-64 lg:bottom-64">
+            <h5 class="serif text-xl">
+                {{ charData.motto }}
+            </h5>
+            <h1 class="serif text-9xl mt-2 uppercase text-white tracking-tagline">
+                {{ charData.tagline }}
+            </h1>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'YuaDeyanara',
+        name: 'Karen',
         props: ['charData'],
     }
 </script>
