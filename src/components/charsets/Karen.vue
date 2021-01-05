@@ -79,6 +79,20 @@
                 </a>
             </div>
         </div>
+
+        <div class="absolute tracking-widest transform -rotate-60
+                    hidden sm:block
+                    md:pt-8 lg:pt-0
+                    sm:opacity-10 lg:opacity-40
+                    sm:-right-80 md:-right-48 lg:right-6 
+                    sm:bottom-64 md:bottom-64 lg:bottom-64">
+            <h5 class="serif text-xl">
+                {{ charData.motto }}
+            </h5>
+            <h1 class="serif text-7xl mt-2 uppercase text-white tracking-tagline">
+                {{ charData.tagline }}
+            </h1>
+        </div>
     </div>
 </template>
 
