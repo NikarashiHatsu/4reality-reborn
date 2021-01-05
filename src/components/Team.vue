@@ -111,6 +111,7 @@
                             h-screen sm:h-auto
                             border-r-0 sm:border-r
                             overflow-hidden" style="height: 625px">
+                    <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
                     <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
                     <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                     <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
@@ -123,12 +124,14 @@
 <script>
     import AuraLily from "./charsets/AuraLily.vue";
     import Karen from "./charsets/Karen.vue";
+    import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import YuaDeyanara from "./charsets/YuaDeyanara.vue";
 
     export default {
         components: {
             AuraLily,
             Karen,
+            KurokamiItsuki,
             YuaDeyanara,
         },
         data() {
@@ -149,11 +152,11 @@
                         bio: "",
                         race: 'Werewolf',
                         palettes: [
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
+                            '#595860',
+                            '#414147',
+                            '#303137',
+                            '#27242F',
+                            '#1F1D25',
                         ],
                         facebook: {
                             userName: 'Kurokami Itsuki',
