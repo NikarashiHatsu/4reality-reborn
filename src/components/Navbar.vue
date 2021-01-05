@@ -11,6 +11,9 @@
                 <a class="px-4 py-2 mr-4 transition ease-in-out duration-300 hover:bg-white hover:text-gray-900 rounded-3xl leading-tights" href="javascript:void(0)">
                     Our Team
                 </a>
+                <a class="px-4 py-2 mr-4 transition ease-in-out duration-300 hover:bg-white hover:text-gray-900 rounded-3xl leading-tights" href="javascript:void(0)">
+                    Our Staff
+                </a>
                 <a class="px-4 py-2 transition ease-in-out duration-300 hover:bg-white hover:text-gray-900 rounded-3xl leading-tights" href="javascript:void(0)">
                     Contact Us
                 </a>
