@@ -1,18 +1,20 @@
 <template>
-  <div>
-    <Navbar :dim="dimTheNavbar" />
+  <div class="relative">
+    <Navbar class="hidden sm:block" :dim="dimTheNavbar" />
     <Hero />
     <About />
     <Team />
     <ContactUs />
     <SocialMedia />
     <Footer />
+    <FloatingActionButton class="block sm:hidden" />
   </div>
 </template>
 
 <script>
 import About from "./components/About.vue";
 import ContactUs from "./components/ContactUs.vue";
+import FloatingActionButton from "./components/FloatingActionButton.vue";
 import Footer from "./components/Footer.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
@@ -24,6 +26,7 @@ export default {
   components: {
     About,
     ContactUs,
+    FloatingActionButton,
     Footer,
     Hero,
     Navbar,
