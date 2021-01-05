@@ -114,6 +114,9 @@
                     <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
                     <RaihanIkeda v-if="gen1Index == 1 && gen1Toggled" :charData="gen1[1]" />
                     <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
+
+                    <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
+
                     <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                     <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
                 </div>
@@ -126,6 +129,7 @@
     import AuraLily from "./charsets/AuraLily.vue";
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
+    import MizukiAoi from "./charsets/MizukiAoi.vue";
     import RaihanIkeda from "./charsets/RaihanIkeda.vue";
     import YuaDeyanara from "./charsets/YuaDeyanara.vue";
 
@@ -134,6 +138,7 @@
             AuraLily,
             Karen,
             KurokamiItsuki,
+            MizukiAoi,
             RaihanIkeda,
             YuaDeyanara,
         },
@@ -273,11 +278,11 @@
                         bio: "",
                         race: 'Blue Yōkai Fox',
                         palettes: [
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
+                            '#4985DB',
+                            '#3A6CBC',
+                            '#1F4086',
+                            '#FFC774',
+                            '#ECA756',
                         ],
                         facebook: {
                             userName: 'Mizuki Aoi',
@@ -291,8 +296,8 @@
                             userName: 'Aoi ch. ミズキアオイ「4 REALITY」',
                             link: 'https://www.youtube.com/channel/UCpzRn1NafleJlKUMRg0Rdrw',
                         },
-                        tagline: '',
-                        motto: '',
+                        tagline: 'Kon-Awi',
+                        motto: 'Gaming And Voice Acting',
                     }
                 ],
                 utaite: [
