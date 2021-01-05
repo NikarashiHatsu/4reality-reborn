@@ -86,6 +86,7 @@
                         char: '/assets/characters/kurokami-itsuki.png',
                         colorScheme: '#000000',
                         bio: "",
+                        race: 'Werewolf',
                         palettes: [
                             '#000000',
                             '#000000',
@@ -114,6 +115,7 @@
                         char: '/assets/characters/raihan-ikeda.png',
                         colorScheme: '#B65D51',
                         bio: "",
+                        race: 'Human',
                         palettes: [
                             '#000000',
                             '#000000',
@@ -142,6 +144,7 @@
                         char: '/assets/characters/karen.png',
                         colorScheme: '#C0A274',
                         bio: "I'm a Highschool student who often go to the internet cafe everyday and also momentum no... I have different personality when I change my glasses...",
+                        race: 'Human',
                         palettes: [
                             '#F9E5C7',
                             '#C0A274',
@@ -170,6 +173,7 @@
                         char: '/assets/characters/vyula.png',
                         colorScheme: '#2B6F9C',
                         bio: "A Prince from noble family, Living his life behind the darkness.",
+                        race: 'Vampire',
                         palettes: [
                             '#000000',
                             '#000000',
@@ -200,6 +204,7 @@
                         char: '/assets/characters/mizuki-aoi.png',
                         colorScheme: '#4985DA',
                         bio: "",
+                        race: 'Blue Yōkai Fox',
                         palettes: [
                             '#000000',
                             '#000000',
@@ -230,6 +235,7 @@
                         char: '/assets/characters/aura-lily.png',
                         colorScheme: '#FDD3DA',
                         bio: "Aloo 💕🌸 Namaku Aura Lily, aku adalah peri yang nyasar karena tersangkut oleh ekor serigala dan terbawa sampai ke Bar 4Reality. 💕🌸",
+                        race: 'Fairy',
                         palettes: [
                             '#FDD3DA',
                             '#F8B6D0',
@@ -258,6 +264,7 @@
                         char: '/assets/characters/yua-deyanara.png',
                         colorScheme: '#DDF5FB',
                         bio: "YUA is what's left from the virtual conciousness of a failed AI. Activated with no memory, she wish to get it back and understand why she was made.",
+                        race: 'A.I',
                         palettes: [
                             '#FADADB',
                             '#AAC8E5',
