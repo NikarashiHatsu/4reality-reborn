@@ -114,6 +114,7 @@
                     <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
                     <RaihanIkeda v-if="gen1Index == 1 && gen1Toggled" :charData="gen1[1]" />
                     <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
+                    <Vyula v-if="gen1Index == 3 && gen1Toggled" :charData="gen1[3]" />
 
                     <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
 
@@ -131,6 +132,7 @@
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import MizukiAoi from "./charsets/MizukiAoi.vue";
     import RaihanIkeda from "./charsets/RaihanIkeda.vue";
+    import Vyula from "./charsets/Vyula.vue";
     import YuaDeyanara from "./charsets/YuaDeyanara.vue";
 
     export default {
@@ -140,6 +142,7 @@
             KurokamiItsuki,
             MizukiAoi,
             RaihanIkeda,
+            Vyula,
             YuaDeyanara,
         },
         data() {
@@ -247,11 +250,11 @@
                         bio: "A Prince from noble family, Living his life behind the darkness.",
                         race: 'Vampire',
                         palettes: [
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
-                            '#000000',
+                            '#6473A1',
+                            '#515f9E',
+                            '#3E407C',
+                            '#DEDEDE',
+                            '#373443',
                         ],
                         facebook: {
                             userName: 'Vyula',
@@ -265,8 +268,8 @@
                             userName: ' Vyula Ch. ビューラ 「4 REALITY」',
                             link: 'https://www.youtube.com/channel/UCO4MJHNZ-nurM3ZRj8gL5Yw',
                         },
-                        tagline: '',
-                        motto: '',
+                        tagline: 'Yo\'i',
+                        motto: 'Gaming, Anime, Comic/Novel',
                     }
                 ],
                 gen2: [
