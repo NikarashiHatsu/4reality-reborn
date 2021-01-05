@@ -10,11 +10,12 @@
 
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
-                    background-position-y: 4rem;
-                    background-position-x: 50%;
-                    background-size: 110%;`" 
-            class="absolute h-full w-96 z-20
-                    -left-8 md:left-0"></div>
+                    background-position-y: 0rem;
+                    background-size: 100%;`" 
+            class="absolute h-full z-20
+                    -left-4 sm:left-0 md:-left-16
+                    w-72 sm:w-96
+                    top-16"></div>
         <h1 class="absolute serif uppercase text-gray-700
                     text-5xl md:text-6xl
                     z-10
@@ -45,8 +46,8 @@
         </p>
         <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
-                    left-4 md:left-32
-                    top-32 md:top-80
+                    left-4 md:left-5 lg:left-20
+                    top-32 md:top-32 lg:top-96
                     w-4 lg:w-80
                     leading-relaxed">
             {{ charData.race }}
@@ -71,34 +72,35 @@
                 <a :href="charData.facebook.link"
                     class="flex items-center serif opacity-50"
                     _target="_blank">
-                    <span class="mr-4">{{ charData.facebook.userName }}</span>
+                    <span class="mr-4 text-xs md:text-base">{{ charData.facebook.userName }}</span>
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a :href="charData.twitter.link"
                     class="flex items-center serif opacity-50 mt-2"
                     _target="_blank">
-                    <span class="mr-1">{{ charData.twitter.userName }}</span>
+                    <span class="mr-1 text-xs md:text-base">{{ charData.twitter.userName }}</span>
                     <i class="fab fa-twitter"></i>
                 </a>
                 <a :href="charData.youtube.link"
                     class="flex items-center serif opacity-50 mt-2"
                     _target="_blank">
-                    <span class="mr-1">{{ charData.youtube.userName }}</span>
+                    <span class="mr-1 text-xs md:text-base">{{ charData.youtube.userName }}</span>
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </div>
 
         <div class="absolute tracking-widest transform -rotate-60
-                    hidden sm:block
                     md:pt-8 lg:pt-0
-                    sm:opacity-10 lg:opacity-40
-                    sm:-right-80 md:-right-48 lg:right-6 
-                    sm:bottom-64 md:bottom-64 lg:bottom-64">
+                    opacity-25
+                    -mr-4 sm:mr-0
+                    -mb-10 sm:mb-0
+                    -right-124 sm:-right-80 md:-right-48 lg:right-6 
+                    bottom-96 sm:bottom-64 md:bottom-64 lg:bottom-64">
             <h5 class="serif text-xl">
                 {{ charData.motto }}
             </h5>
-            <h1 class="serif text-7xl mt-2 uppercase text-white tracking-tagline">
+            <h1 class="serif mt-2 text-8xl sm:text-7xl uppercase text-white tracking-tagline">
                 {{ charData.tagline }}
             </h1>
         </div>
