@@ -7,6 +7,7 @@
             <div :style="`background-color: ${charData.palettes[3]}`" class="absolute top-8 left-0 w-6 h-6"></div>
             <div :style="`background-color: ${charData.palettes[4]}`" class="absolute top-16 left-0 w-6 h-6"></div>
         </div>
+
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 4rem;
@@ -24,9 +25,10 @@
                     w-4 sm:w-auto" style="letter-spacing: 0.625em" >
             {{ charData.name }}
         </h1>
-        <h1 class="absolute z-10 serif uppercase bottom-16 text-gray-200
+        <h1 class="absolute z-10 serif uppercase bottom-16
                     text-6xl md:text-8xl
                     -left-4 md:-left-8
+                    opacity-10
                     hidden sm:block" style="letter-spacing: 0.625em" >
             {{ charData.name }}
         </h1>
@@ -40,6 +42,7 @@
                     hidden sm:block">
             {{ charData.bio }}
         </p>
+
         <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
             <div :style="'background-color: ' + charData.palettes[1]"
                  class="absolute w-160 h-240 transform rotate-30 z-0
@@ -52,6 +55,29 @@
                  class="absolute w-160 h-240 transform rotate-30 z-0
                         md:-top-24 lg:-top-20 
                         -right-120 sm:-right-120 md:-right-100 lg:-right-44" id="bg-2"></div>
+        </div>
+
+        <div class="right-0 bottom-0 absolute z-20">
+            <div class="flex flex-col items-end m-4">
+                <a :href="charData.facebook.link"
+                    class="flex items-center serif opacity-50"
+                    _target="_blank">
+                    <span class="mr-4">{{ charData.facebook.userName }}</span>
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a :href="charData.twitter.link"
+                    class="flex items-center serif opacity-50 mt-2"
+                    _target="_blank">
+                    <span class="mr-1">{{ charData.twitter.userName }}</span>
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a :href="charData.youtube.link"
+                    class="flex items-center serif opacity-50 mt-2"
+                    _target="_blank">
+                    <span class="mr-1">{{ charData.youtube.userName }}</span>
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
     </div>
 </template>
