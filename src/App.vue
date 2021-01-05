@@ -4,11 +4,13 @@
     <Hero />
     <About />
     <Team />
+    <Footer />
   </div>
 </template>
 
 <script>
 import About from "./components/About.vue";
+import Footer from "./components/Footer.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
 import Team from "./components/Team.vue";
@@ -17,6 +19,7 @@ export default {
   name: 'App',
   components: {
     About,
+    Footer,
     Hero,
     Navbar,
     Team,
