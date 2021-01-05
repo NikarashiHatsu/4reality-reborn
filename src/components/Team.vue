@@ -26,7 +26,7 @@
             </button>
             <button :style="(utaiteToggled) ? toggledButtonColor : ''"
                     @click="toggleUtaite()" 
-                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-t border-r
+                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
                             w-1/3 sm:w-auto
                             rounded-t-md
                             text-xs sm:text-base">
