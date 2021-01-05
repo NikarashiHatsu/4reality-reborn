@@ -150,7 +150,7 @@
                 gen1Toggled: true,
                 gen2Toggled: false,
                 utaiteToggled: false,
-                gen1Index: 2,
+                gen1Index: 0,
                 gen2Index: 0,
                 utaiteIndex: 0,
                 
