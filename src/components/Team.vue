@@ -56,7 +56,8 @@
 
                 <div class="col-span-12 sm:col-span-10 lg:col-span-11
                             h-screen sm:h-auto
-                            border-r-0 sm:border-r" style="height: 625px">
+                            border-r-0 sm:border-r
+                            overflow-hidden" style="height: 625px">
                     <Karen :charData="gen1[2]" />
                     <!-- <YuaDeyanara :charData="utaite[1]" /> -->
                     <!-- <AuraLily :charData="utaite[0]" /> -->
