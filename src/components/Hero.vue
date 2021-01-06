@@ -19,7 +19,7 @@
                 </div>
                 <img class="w-40 md:w-80 
                             h-40 md:h-80
-                            mb-8 md:mb-0" src="/assets/4r_logo.png" alt="4R Logo" />
+                            mb-8 md:mb-0" :src="'./assets/4r_logo.png'" alt="4R Logo" />
             </div>
         </div>
         <div class="absolute w-full h-6 bg-gray-700 -bottom-6"></div>

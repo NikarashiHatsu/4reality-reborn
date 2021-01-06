@@ -76,11 +76,11 @@
                     <img class="absolute z-0 opacity-50 
                                 transform rotate-90 sm:rotate-0
                                 bottom-4 sm:bottom-2 
-                                left-0 sm:left-2" src="/assets/particles/rectangles-dot.png" />
+                                left-0 sm:left-2" :src="'./assets/particles/rectangles-dot.png'" />
                     <img class="absolute z-0 opacity-50
                                 transform rotate-90 sm:rotate-0
                                 top-4 sm:top-2 
-                                right-0 sm:right-2" src="/assets/particles/rectangles-dot.png" />
+                                right-0 sm:right-2" :src="'./assets/particles/rectangles-dot.png'" />
 
                     <div class="absolute flex w-full justify-center items-center
                                 flex-row sm:flex-col"
