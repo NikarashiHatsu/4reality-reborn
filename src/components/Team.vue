@@ -6,32 +6,42 @@
             </h5>
         </div>
 
-        <div class="flex mt-12 justify-center">
-            <button :style="(gen1Toggled) ? toggledButtonColor : ''"
-                    @click="toggleGen1()" 
-                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                            w-1/3 sm:w-auto
-                            rounded-t-md
-                            text-xs sm:text-base">
-                4R Gen 1
-            </button>
-            <button :style="(gen2Toggled) ? toggledButtonColor : ''"
-                    @click="toggleGen2()" 
-                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                            w-1/3 sm:w-auto 
-                            mx-0 sm:mx-4
-                            rounded-t-md
-                            text-xs sm:text-base">
-                4R Gen 2
-            </button>
-            <button :style="(utaiteToggled) ? toggledButtonColor : ''"
-                    @click="toggleUtaite()" 
-                    class="px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                            w-1/3 sm:w-auto
-                            rounded-t-md
-                            text-xs sm:text-base">
-                Utaite
-            </button>
+        <div class="max-w-2xl mx-auto">
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-0 sm:gap-4 mt-12 justify-center">
+                <button :style="(gen1Toggled) ? toggledButtonColor : ''"
+                        @click="toggleGen1()" 
+                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
+                                focus:outline-none
+                                rounded-t-none sm:rounded-t-md
+                                text-xs sm:text-base">
+                    4R Gen 1
+                </button>
+                <button :style="(gen2Toggled) ? toggledButtonColor : ''"
+                        @click="toggleGen2()" 
+                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
+                                focus:outline-none
+                                rounded-t-none sm:rounded-t-md
+                                text-xs sm:text-base">
+                    4R Gen 2
+                </button>
+                <button :style="(utaiteToggled) ? toggledButtonColor : ''"
+                        @click="toggleUtaite()" 
+                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
+                                focus:outline-none
+                                rounded-t-none sm:rounded-t-md
+                                text-xs sm:text-base">
+                    Utaite
+                </button>
+                <button :style="(staffToggled) ? toggledButtonColor : ''"
+                        @click="toggleStaff()" 
+                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
+                                focus:outline-none
+                                rounded-t-none sm:rounded-t-md
+                                text-xs sm:text-base">
+                    Staff
+                </button>
+            </div>
         </div>
         <div class="border-t border-b">
             <div class="grid grid-cols-12 grid-flow-row max-w-7xl mx-auto" style="height: auto;">
@@ -150,15 +160,17 @@
                 gen1Toggled: true,
                 gen2Toggled: false,
                 utaiteToggled: false,
+                staffToggled: false,
                 gen1Index: 0,
                 gen2Index: 0,
                 utaiteIndex: 0,
+                staffIndex: 0,
                 
                 gen1: [
                     {
                         name: 'Kurokami Itsuki',
-                        avatar: '/assets/avatar/kurokami-itsuki.png',
-                        char: '/assets/characters/kurokami-itsuki.png',
+                        avatar: './assets/avatar/kurokami-itsuki.png',
+                        char: './assets/characters/kurokami-itsuki.png',
                         colorScheme: '#000000',
                         bio: "",
                         race: 'Werewolf',
@@ -186,8 +198,8 @@
                     },
                     {
                         name: 'Raihan Ikeda',
-                        avatar: '/assets/avatar/raihan-ikeda.png',
-                        char: '/assets/characters/raihan-ikeda.png',
+                        avatar: './assets/avatar/raihan-ikeda.png',
+                        char: './assets/characters/raihan-ikeda.png',
                         colorScheme: '#B65D51',
                         bio: "",
                         race: 'Human',
@@ -215,8 +227,8 @@
                     },
                     {
                         name: 'Karen',
-                        avatar: '/assets/avatar/karen.png',
-                        char: '/assets/characters/karen.png',
+                        avatar: './assets/avatar/karen.png',
+                        char: './assets/characters/karen.png',
                         colorScheme: '#C0A274',
                         bio: "I'm a Highschool student who often go to the internet cafe everyday and also momentum no... I have different personality when I change my glasses...",
                         race: 'Human',
@@ -244,8 +256,8 @@
                     },
                     {
                         name: 'Vyula',
-                        avatar: '/assets/avatar/vyula.png',
-                        char: '/assets/characters/vyula.png',
+                        avatar: './assets/avatar/vyula.png',
+                        char: './assets/characters/vyula.png',
                         colorScheme: '#2B6F9C',
                         bio: "A Prince from noble family, Living his life behind the darkness.",
                         race: 'Vampire',
@@ -275,8 +287,8 @@
                 gen2: [
                     {
                         name: 'Mizuki Aoi',
-                        avatar: '/assets/avatar/mizuki-aoi.png',
-                        char: '/assets/characters/mizuki-aoi.png',
+                        avatar: './assets/avatar/mizuki-aoi.png',
+                        char: './assets/characters/mizuki-aoi.png',
                         colorScheme: '#4985DA',
                         bio: "",
                         race: 'Blue Yōkai Fox',
@@ -306,8 +318,8 @@
                 utaite: [
                     {
                         name: 'Aura Lily',
-                        avatar: '/assets/avatar/aura-lily.png',
-                        char: '/assets/characters/aura-lily.png',
+                        avatar: './assets/avatar/aura-lily.png',
+                        char: './assets/characters/aura-lily.png',
                         colorScheme: '#FDD3DA',
                         bio: "Aloo 💕🌸 Namaku Aura Lily, aku adalah peri yang nyasar karena tersangkut oleh ekor serigala dan terbawa sampai ke Bar 4Reality. 💕🌸",
                         race: 'Fairy',
@@ -362,6 +374,37 @@
                         tagline: 'HWEEE',
                         motto: 'Singing, updating her database',
                     },
+                ],
+                staff: [
+                    {
+                        name: 'HatsuShiroyuki',
+                        avatar: '',
+                        char: '',
+                        colorScheme: '',
+                        bio: "Developer gabut",
+                        race: 'Cat?',
+                        palettes: [
+                            '#000000',
+                            '#000000',
+                            '#000000',
+                            '#000000',
+                            '#000000',
+                        ],
+                        facebook: {
+                            userName: 'HatsuShiroyuki',
+                            link: 'https://web.facebook.com/hatsu.shiroyuki',
+                        },
+                        twitter: {
+                            userName: 'NikarashiHatsu',
+                            link: 'https://twitter.com/NikarashiHatsu',
+                        },
+                        youtube: {
+                            userName: '',
+                            link: '',
+                        },
+                        tagline: 'Poggers',
+                        motto: 'Code, Game, and Die',
+                    }
                 ]
             }
         },
@@ -376,6 +419,10 @@
 
             changeUtaiteIndex(index) {
                 this.utaiteIndex = index;
+            },
+
+            changeStaffIndex(index) {
+                this.staffIndex = index;
             },
 
             toggleGen1() {
@@ -393,10 +440,16 @@
                 this.utaiteToggled = true;
             },
 
+            toggleStaff() {
+                this.reset();
+                this.staffToggled = true;
+            },
+
             reset() {
                 this.gen1Toggled = false;
                 this.gen2Toggled = false;
                 this.utaiteToggled = false;
+                this.staffToggled = false;
             }
         },
 
@@ -418,6 +471,11 @@
                 if (this.utaiteToggled) {
                     usedSet = this.utaite;
                     indexSet = this.utaiteIndex;
+                }
+
+                if (this.staffToggled) {
+                    usedSet = this.staff;
+                    indexSet = this.staffIndex;
                 }
 
                 return `background-color: ${usedSet[indexSet].palettes[2]}; color: white;`;

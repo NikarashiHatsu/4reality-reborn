@@ -79,28 +79,7 @@
                         -right-120 sm:-right-120 md:-right-100 lg:-right-44" id="bg-2"></div>
         </div>
 
-        <div class="right-0 bottom-0 absolute z-20 text-white">
-            <div class="flex flex-col items-end m-4">
-                <a :href="charData.facebook.link"
-                    class="flex items-center serif opacity-75"
-                    _target="_blank">
-                    <span class="mr-4 text-xs md:text-base">{{ charData.facebook.userName }}</span>
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a :href="charData.twitter.link"
-                    class="flex items-center serif opacity-75 mt-2"
-                    _target="_blank">
-                    <span class="mr-1 text-xs md:text-base">{{ charData.twitter.userName }}</span>
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a :href="charData.youtube.link"
-                    class="flex items-center serif opacity-75 mt-2"
-                    _target="_blank">
-                    <span class="mr-1 text-xs md:text-base">{{ charData.youtube.userName }}</span>
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-        </div>
+        <SocialMedia :charData="charData" />
 
         <div class="absolute tracking-widest transform -rotate-60
                     md:pt-8 lg:pt-0
@@ -121,7 +100,12 @@
 </template>
 
 <script>
+    import SocialMedia from "./SocialMedia.vue";
+
     export default {
+        components: {
+            SocialMedia,
+        },
         name: 'RaihanIkeda',
         props: ['charData'],
     }
