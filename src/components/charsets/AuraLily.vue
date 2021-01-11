@@ -1,5 +1,6 @@
 <template>
     <div class="w-full h-full relative">
+        <!-- Color Palette -->
         <div class="relative top-4 ml-4">
             <div :style="`background-color: ${charData.palettes[0]}`" class="absolute top-0 left-0 w-6 h-6"></div>
             <div :style="`background-color: ${charData.palettes[1]}`" class="absolute top-0 left-8 w-6 h-6"></div>
@@ -8,6 +9,7 @@
             <div :style="`background-color: ${charData.palettes[4]}`" class="absolute top-16 left-0 w-6 h-6"></div>
         </div>
 
+        <!-- Character image -->
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
@@ -16,6 +18,12 @@
                     left-8 sm:left-0 md:left-8
                     w-72 sm:w-96
                     top-16"></div>
+
+        <!-- Lines beside the name -->
+        <div :style="`background-color: ${charData.palettes[1]}`" class="w-2 h-32 opacity-50 absolute top-0 left-120 -ml-10"></div>
+        <div :style="`background-color: ${charData.palettes[3]}`" class="w-2 h-16 opacity-50 absolute top-60 left-120 ml-6"></div>
+
+        <!-- Main chara name - Top left -->
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-4xl
                     w-96 sm:w-4
@@ -28,6 +36,7 @@
                 {{ charData.name.split(' ')[1] }}
             </span>
         </h2>
+        <!-- Main chara name - Top right -->
         <h4 class="absolute serif uppercase text-gray-700 break-words leading-tight z-10
                     text-2xl
                     w-4
@@ -37,6 +46,7 @@
                     hidden sm:block">
             {{ charData.name.split(' ')[1] }}
         </h4>
+        <!-- Secondary chara name (on the bottom) -->
         <h1 class="absolute z-10 serif uppercase bottom-16
                     text-6xl md:text-8xl
                     -left-4 md:-left-8
@@ -55,17 +65,33 @@
                     hidden sm:block">
             {{ charData.bio }}
         </p> -->
-        <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
+
+        <!-- Race -->
+        <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
-                    left-4 md:left-5 lg:left-40
+                    left-4 md:left-5 lg:left-96
                     top-32 md:top-32 lg:top-96
-                    w-4 lg:w-80
+                    w-4 lg:w-auto
                     leading-relaxed">
             {{ charData.race }}
-        </p>
+            
+            <span class="relative md:hidden lg:block">
+                <div class="absolute flex items-center left-0 -top-12">
+                    <img :src="'./assets/particles/rectangles-dot.png'" alt="" />
+                    <svg class="w-2 text-gray-500 fill-current ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                    </svg>
+                </div>
+            </span>
+            <span class="block text-left text-xs">
+                {{ charData.height }}
+            </span>
+        </div>
 
+        <!-- Right panel -->
         <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
-            <div :style="'background-color: ' + charData.palettes[1]"
+            <div :style="'background-color: ' + charData.palettes[3]"
                  class="absolute w-160 h-240 transform rotate-30 z-0
                         md:-top-26 lg:-top-12 
                         -right-112 sm:-right-112 md:-right-96 lg:-right-32" id="bg-1"></div>
@@ -78,7 +104,7 @@
                         -right-120 sm:-right-120 md:-right-100 lg:-right-44" id="bg-2"></div>
         </div>
 
-        <SocialMedia :charData="charData" />
+        <SocialMedia class="text-gray-800 opacity-50" :charData="charData" />
 
         <div class="absolute tracking-widest transform -rotate-60
                     md:pt-8 lg:pt-0
