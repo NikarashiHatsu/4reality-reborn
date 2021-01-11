@@ -73,11 +73,11 @@
                                 leading-normal sm:leading-relaxed">
                         Members
                     </h6>
-                    <img class="absolute z-0 opacity-50 
+                    <img class="absolute z-0 
                                 transform rotate-90 sm:rotate-0
                                 bottom-4 sm:bottom-2 
                                 left-0 sm:left-2" :src="'./assets/particles/rectangles-dot.png'" />
-                    <img class="absolute z-0 opacity-50
+                    <img class="absolute z-0
                                 transform rotate-90 sm:rotate-0
                                 top-4 sm:top-2 
                                 right-0 sm:right-2" :src="'./assets/particles/rectangles-dot.png'" />
