@@ -10,8 +10,11 @@ module.exports = {
     rotate: {
       '-60': '-60deg',
       '-45': '-45deg',
+      '-15': '-15deg',
+      '15': '15deg',
       '30': '30deg',
       '45': '45deg',
+      '90': '90deg',
     },
     extend: {
       spacing: {
