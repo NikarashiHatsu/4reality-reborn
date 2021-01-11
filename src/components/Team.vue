@@ -195,6 +195,9 @@
                         },
                         tagline: '',
                         motto: '',
+                        height: '',
+                        birthDate: '',
+                        age: '',
                     },
                     {
                         name: 'Raihan Ikeda',
@@ -224,6 +227,9 @@
                         },
                         tagline: 'Trading Mang',
                         motto: 'Interaction with people, Playing Game, Trading',
+                        height: '170cm',
+                        birthDate: 'April 4th',
+                        age: '(Secret)',
                     },
                     {
                         name: 'Karen',
@@ -253,6 +259,9 @@
                         },
                         tagline: 'Momentum',
                         motto: 'Gaming, Programming, Sleeping',
+                        height: '158cm',
+                        birthDate: 'August 30th',
+                        age: '(Secret)',
                     },
                     {
                         name: 'Vyula',
@@ -282,6 +291,9 @@
                         },
                         tagline: 'Yo\'i',
                         motto: 'Gaming, Anime, Comic/Novel',
+                        height: '183cm',
+                        birthDate: 'October 24th',
+                        age: '3108 y/o',
                     }
                 ],
                 gen2: [
@@ -313,6 +325,9 @@
                         },
                         tagline: 'Kon-Awi',
                         motto: 'Gaming And Voice Acting',
+                        height: '180cm (ears included)',
+                        birthDate: 'February 29th',
+                        age: '99',
                     }
                 ],
                 utaite: [
@@ -344,6 +359,9 @@
                         },
                         tagline: 'ABWANG',
                         motto: 'Singing, Rebahan, Masuk Dalam Toples',
+                        height: '12cm',
+                        birthDate: 'October 27th',
+                        age: '',
                     },
                     {
                         name: 'Yua Deyanara',
@@ -373,6 +391,9 @@
                         },
                         tagline: 'HWEEE',
                         motto: 'Singing, updating her database',
+                        height: 'Unkown',
+                        birthDate: 'Unkown',
+                        age: 'Unkown',
                     },
                 ],
                 staff: [
@@ -404,6 +425,9 @@
                         },
                         tagline: 'Poggers',
                         motto: 'Code, Game, and Die',
+                        height: '160cm',
+                        birthDate: 'March 16th, 2001',
+                        age: '19 y/o',
                     }
                 ]
             }
