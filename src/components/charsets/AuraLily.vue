@@ -20,8 +20,14 @@
                     top-16"></div>
 
         <!-- Lines beside the name -->
-        <div :style="`background-color: ${charData.palettes[1]}`" class="w-2 h-32 opacity-50 absolute top-0 left-120 -ml-10"></div>
-        <div :style="`background-color: ${charData.palettes[3]}`" class="w-2 h-16 opacity-50 absolute top-60 left-120 ml-6"></div>
+        <div class="w-2 h-32 opacity-50 absolute top-0
+                    sm:left-100 md:left-120
+                    sm:-ml-6 md:-ml-10
+                    hidden sm:block" :style="`background-color: ${charData.palettes[1]}`"></div>
+        <div class="w-2 h-16 opacity-50 absolute top-60 
+                    sm:left-100 md:left-120 
+                    sm:ml-10 md:ml-6
+                    hidden sm:block" :style="`background-color: ${charData.palettes[3]}`"></div>
 
         <!-- Main chara name - Top left -->
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
@@ -75,7 +81,7 @@
                     leading-relaxed">
             {{ charData.race }}
             
-            <span class="relative md:hidden lg:block">
+            <span class="relative hidden lg:block">
                 <div class="absolute flex items-center left-0 -top-12">
                     <img :src="'./assets/particles/rectangles-dot.png'" alt="" />
                     <svg class="w-2 text-gray-500 fill-current ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
@@ -84,7 +90,7 @@
                     </svg>
                 </div>
             </span>
-            <span class="block text-left text-xs">
+            <span class="hidden lg:block text-left text-xs">
                 {{ charData.height }}
             </span>
         </div>

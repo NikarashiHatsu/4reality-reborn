@@ -38,7 +38,7 @@
                     top-4 sm:top-16
                     right-16 sm:right-4 lg:right-0
                     break-words sm:break-normal
-                    w-4 sm:w-auto" style="letter-spacing: 0.625em" >
+                    w-4 sm:w-auto" style="letter-spacing: 0.625em">
             {{ charData.name }}
         </h1>
         <!-- Secondary chara name (on the bottom) -->
@@ -76,7 +76,7 @@
                     leading-relaxed">
             {{ charData.race }}
             
-            <span class="relative md:hidden lg:block">
+            <span class="relative hidden lg:block">
                 <div class="absolute flex items-center left-0 -top-12">
                     <img :src="'./assets/particles/rectangles-dot.png'" alt="" />
                     <svg class="w-2 text-gray-500 fill-current ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
@@ -85,7 +85,7 @@
                     </svg>
                 </div>
             </span>
-            <span class="block text-left text-xs">
+            <span class="hidden lg:block text-left text-xs">
                 {{ charData.height }}
             </span>
         </p>
