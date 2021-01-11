@@ -85,6 +85,9 @@
                     </svg>
                 </div>
             </span>
+            <span class="block text-left text-xs">
+                {{ charData.height }}
+            </span>
         </p>
 
         <!-- Right panel -->
