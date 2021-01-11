@@ -76,7 +76,7 @@
                     leading-relaxed">
             {{ charData.race }}
             
-            <span class="relative md:hidden block">
+            <span class="relative md:hidden lg:block">
                 <div class="absolute flex items-center left-0 -top-12">
                     <img :src="'./assets/particles/rectangles-dot.png'" alt="" />
                     <svg class="w-2 text-gray-500 fill-current ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
