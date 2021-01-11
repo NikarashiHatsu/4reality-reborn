@@ -21,22 +21,22 @@
                         mt-12 md:mt-0">
                 <div class="grid grid-flow-row gap-12
                             grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                    <AboutCard :shadowPosition="'top-left'" :cardColor="'bg-gray-900'">
+                    <AboutCard :cardType="'v'" :shadowPosition="'top-left'" :cardColor="'bg-gray-900'">
                         <template #content>
                             To be indonesian vtuber team that can gather various content creator and improve indonesian virtual entertainment.
                         </template> 
                     </AboutCard>
-                    <AboutCard class="mt-0 lg:mt-48" :shadowPosition="'top-right'" :cardColor="'bg-gray-800'">
+                    <AboutCard class="mt-0 lg:mt-48" :cardType="'m'" :shadowPosition="'top-right'" :cardColor="'bg-gray-800'">
                         <template #content>
                             Provide entertaining quality content for viewers.
                         </template> 
                     </AboutCard>
-                    <AboutCard class="mt-0 lg:-mt-48" :shadowPosition="'bottom-left'" :cardColor="'bg-gray-700'">
+                    <AboutCard class="mt-0 lg:-mt-48" :cardType="'m'" :shadowPosition="'bottom-left'" :cardColor="'bg-gray-700'">
                         <template #content>
                             To participate on interaction and communication with fans as well as vtuber community.
                         </template> 
                     </AboutCard>
-                    <AboutCard :shadowPosition="'bottom-right'" :cardColor="'bg-gray-600'">
+                    <AboutCard :cardType="'m'" :shadowPosition="'bottom-right'" :cardColor="'bg-gray-600'">
                         <template #content>
                             Create a community that provides mutual support between content creators within indonesian virtual entertainment.
                         </template> 

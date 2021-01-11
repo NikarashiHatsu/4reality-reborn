@@ -9,7 +9,9 @@ module.exports = {
   theme: {
     rotate: {
       '-60': '-60deg',
+      '-45': '-45deg',
       '30': '30deg',
+      '45': '45deg',
     },
     extend: {
       spacing: {
