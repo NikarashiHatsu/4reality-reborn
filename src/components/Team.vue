@@ -128,8 +128,9 @@
 
                     <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
 
-                    <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
-                    <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
+                    <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
+                    <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
+                    <YuaDeyanara v-if="utaiteIndex == 2 && utaiteToggled" :charData="utaite[2]" />
                 </div>
             </div>
         </div>
@@ -138,6 +139,7 @@
 
 <script>
     import AuraLily from "./charsets/AuraLily.vue";
+    import Cyanpile from "./charsets/Cyanpile.vue";
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import MizukiAoi from "./charsets/MizukiAoi.vue";
@@ -148,6 +150,7 @@
     export default {
         components: {
             AuraLily,
+            Cyanpile,
             Karen,
             KurokamiItsuki,
             MizukiAoi,
@@ -331,6 +334,38 @@
                     }
                 ],
                 utaite: [
+                    {
+                        name: 'Cyanpile',
+                        avatar: './assets/avatar/cyanpile.png',
+                        char: './assets/characters/cyanpile.png',
+                        colorScheme: '#D49877',
+                        bio: '',
+                        race: 'Human',
+                        palettes: [
+                            '#D49877',
+                            '#3D4050',
+                            '#2B3040',
+                            '#825B4F',
+                            '#69483F',
+                        ],
+                        facebook: {
+                            userName: 'Cyanpile',
+                            link: 'https://www.facebook.com/CyanPile7295',
+                        },
+                        twitter: {
+                            userName: 'CYANPILE シアンパイル - 「4 REALITY」',
+                            link: 'https://twitter.com/CyanPile4R',
+                        },
+                        youtube: {
+                            userName: 'CYANPILE Ch. シアンパイル 「4 REALITY」 ',
+                            link: 'https://www.youtube.com/channel/UCaBDpGF4yhTgEscYYAbZDvA',
+                        },
+                        tagline: '',
+                        motto: 'Traveling, Writing, Listening Music',
+                        height: '173cm',
+                        birthDate: 'June 26th',
+                        age: '(Secret)',
+                    },
                     {
                         name: 'Aura Lily',
                         avatar: './assets/avatar/aura-lily.png',
