@@ -365,8 +365,8 @@
                     },
                     {
                         name: 'Yua Deyanara',
-                        avatar: '/assets/avatar/yua-deyanara.png',
-                        char: '/assets/characters/yua-deyanara.png',
+                        avatar: './assets/avatar/yua-deyanara.png',
+                        char: './assets/characters/yua-deyanara.png',
                         colorScheme: '#DDF5FB',
                         bio: "YUA is what's left from the virtual conciousness of a failed AI. Activated with no memory, she wish to get it back and understand why she was made.",
                         race: 'A.I',
