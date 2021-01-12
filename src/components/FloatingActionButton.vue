@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center fixed z-40 bottom-4 right-4">
+    <div class="flex flex-col items-center fixed z-50 bottom-4 right-4">
         <button v-if="isOpen" class="flex justify-center items-center w-12 h-12 bg-gray-600 text-white focus:outline-none rounded-full shadow-2xl mb-4">
             <svg class="w-4 h-4 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
