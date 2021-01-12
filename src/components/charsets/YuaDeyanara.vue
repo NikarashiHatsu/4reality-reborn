@@ -32,7 +32,7 @@
             <span class="static sm:absolute z-20">{{ charData.name.split(' ')[0] }}</span>
             
             <!-- Blue rectangle -->
-            <div class="absolute h-8 bg-gray-400 top-0 z-0 opacity-50
+            <div class="absolute h-8 top-0 z-0 opacity-50
                         hidden sm:block
                         w-24 md:w-48
                         right-12 md:-right-2" :style="`background-color: ${charData.palettes[1]}`"></div>
@@ -47,10 +47,10 @@
                     lg:left-72
                     sm:right-6 md:right-28 lg:right-0
                     hidden sm:block">
-            {{ charData.name.split(' ')[1] }}
+            <span class="absolute z-10">{{ charData.name.split(' ')[1] }}</span>
 
-            <!-- Blue rectangle -->
-            <div class="absolute w-48 h-2 bg-gray-400 bottom-1 -left-6 z-0 opacity-50" :style="`background-color: ${charData.palettes[3]}`"></div>
+            <!-- Pink rectangle -->
+            <div class="absolute w-48 h-2 -bottom-8 -left-6 z-0 opacity-50" :style="`background-color: ${charData.palettes[3]}`"></div>
         </div>
         <!-- Secondary chara name (on the bottom) -->
         <h1 class="absolute z-10 serif uppercase bottom-16
