@@ -14,14 +14,14 @@
                     background-size: 75%;`" 
             class="absolute h-full z-20
                     left-6 sm:left-8 md:left-8 lg:left-4
-                    w-72 sm:w-96
-                    top-12"></div>
+                    w-80 sm:w-96
+                    top-8 sm:top-12"></div>
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-2xl sm:text-5xl
                     w-32 sm:w-auto
                     text-right sm:text-left
-                    top-3 sm:top-8 md:top-10 lg:top-18
-                    left-40 sm:left-56 md:left-52 lg:left-56
+                    top-3 sm:top-6 md:top-5 lg:top-18
+                    left-32 sm:left-32 md:left-36 lg:left-56
                     break-normal sm:break-words">
             {{ charData.name.split(' ')[0] }}
             <span class="sm:hidden">
@@ -30,9 +30,9 @@
         </h2>
         <h4 class=" absolute serif uppercase text-gray-700 break-words tracking-tagline z-10
                     text-3xl
-                    ml-8 md:ml-0
-                    sm:top-24 md:top-24
-                    sm:left-80 md:left-96 lg:left-110
+                    ml-8 md:ml-6 lg:ml-0
+                    sm:top-20 lg:top-24
+                    sm:left-80 lg:left-110
                     sm:right-6 md:right-28
                     hidden sm:block">
             {{ charData.name.split(' ')[1] }}
@@ -57,14 +57,33 @@
                     hidden sm:block">
             {{ charData.bio }}
         </p>
-        <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
+        <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
+                    lg:ml-6
                     left-4 md:left-5 lg:left-72
                     top-32 md:top-32 lg:top-96
                     w-4 lg:w-auto
                     leading-relaxed">
-            {{ charData.race }}
-        </p>
+            <p class="text-left">{{ charData.race }}</p>
+            <div :style="`background-color: ${charData.palettes[2]}`" class="absolute hidden lg:block -left-4 -top-6 w-1 h-26 opacity-50 bg-gray-100"></div>
+            
+            <span class="relative hidden lg:block">
+                <div class="absolute flex items-center left-0 -top-12">
+                    <img :src="'./assets/particles/rectangles-dot.png'" alt="" />
+                    <svg class="w-2 text-gray-500 fill-current ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                    </svg>
+                </div>
+            </span>
+            <span class="hidden lg:block text-left text-xs">
+                {{ charData.height }}
+            </span>
+
+            <p class="mt-4 hidden lg:block text-left text-xs">
+                {{ charData.birthDate }}
+            </p>
+        </div>
 
         <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
             <div :style="'background-color: ' + charData.palettes[1]"
@@ -83,13 +102,14 @@
         <SocialMedia :charData="charData" />
 
         <div class="absolute tracking-widest transform -rotate-60
+                    w-200 sm:w-auto
                     md:pt-8 lg:pt-0
                     opacity-25
                     mr-0 sm:-mr-8 md:-mr-2
                     -mb-0 sm:mb-0
-                    -right-14 sm:-right-80 md:-right-52 lg:right-0
-                    bottom-32 sm:bottom-64 md:bottom-64 lg:bottom-64">
-            <h5 class="serif text-xl">
+                    -right-96 sm:-right-80 md:-right-40 lg:right-14
+                    bottom-80 sm:bottom-64 md:bottom-56 lg:bottom-56">
+            <h5 class="serif text-xl text-white">
                 {{ charData.motto }}
             </h5>
             <h1 class="serif mt-2 text-5xl sm:text-8xl uppercase text-white tracking-tagline">
