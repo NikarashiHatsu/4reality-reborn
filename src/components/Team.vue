@@ -323,7 +323,7 @@
                         },
                         tagline: 'Kon-Awi',
                         motto: 'Gaming And Voice Acting',
-                        height: '180cm (ears included)',
+                        height: '180cm',
                         birthDate: 'February 29th',
                         age: '99',
                     },
