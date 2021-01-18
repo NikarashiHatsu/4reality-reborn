@@ -11,8 +11,8 @@
 
         <!-- Backdots -->
         <div class="absolute top-32 -left-8">
-            <div class="grid grid-cols-5 grid-flow-row gap-8">
-                <div v-for="index in 10" :key="index" :style="`background-color: ${charData.palettes[2]}`" class="opacity-10 w-16 h-16"></div>
+            <div class="grid grid-cols-7 grid-flow-row gap-8 w-160">
+                <div v-for="index in 14" :key="index" :style="`background-color: ${charData.palettes[2]}`" class="opacity-10 w-16 h-16"></div>
             </div>
         </div>
 
@@ -68,13 +68,14 @@
         </p>
 
         <!-- Race -->
-        <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
+        <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
                     left-4 md:left-5 lg:left-72
                     top-32 md:top-32 lg:top-96
                     w-4 lg:w-auto
                     leading-relaxed">
-            {{ charData.race }}
+            <p class="text-left">{{ charData.race }}</p>
+            <div :style="`background-color: ${charData.palettes[2]}`" class="absolute hidden lg:block -left-4 -top-6 w-1 h-26 opacity-50 bg-gray-100"></div>
             
             <span class="relative hidden lg:block">
                 <div class="absolute flex items-center left-0 -top-12">
@@ -88,7 +89,11 @@
             <span class="hidden lg:block text-left text-xs">
                 {{ charData.height }}
             </span>
-        </p>
+
+            <p class="mt-4 hidden lg:block text-left text-xs">
+                {{ charData.birthDate }}
+            </p>
+        </div>
 
         <!-- Right panel -->
         <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">

@@ -256,7 +256,7 @@
                             link: 'https://www.youtube.com/Karen_naws',
                         },
                         tagline: 'Momentum',
-                        motto: 'Gaming, Programming, Sleeping',
+                        motto: 'Gaming - Programming - Sleeping',
                         height: '158cm',
                         birthDate: 'August 30th',
                         age: '(Secret)',
