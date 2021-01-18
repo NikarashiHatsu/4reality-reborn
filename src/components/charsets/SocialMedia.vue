@@ -3,7 +3,8 @@
         <div class="flex flex-col items-end m-4">
             <a :href="charData.facebook.link"
                 class="flex items-center serif"
-                _target="_blank">
+                _target="_blank"
+                v-if="charData.facebook.userName && charData.facebook.link">
                 <span class="mr-4 text-xs md:text-base">{{ charData.facebook.userName }}</span>
                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                     <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
@@ -12,7 +13,8 @@
             </a>
             <a :href="charData.twitter.link"
                 class="flex items-center serif mt-2"
-                _target="_blank">
+                _target="_blank"
+                v-if="charData.twitter.userName && charData.twitter.link">
                 <span class="mr-1 text-xs md:text-base">{{ charData.twitter.userName }}</span>
                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
@@ -21,7 +23,8 @@
             </a>
             <a :href="charData.youtube.link"
                 class="flex items-center serif mt-2"
-                _target="_blank">
+                _target="_blank"
+                v-if="charData.youtube.userName && charData.youtube.link">
                 <span class="mr-1 text-xs md:text-base">{{ charData.youtube.userName }}</span>
                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                     <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
