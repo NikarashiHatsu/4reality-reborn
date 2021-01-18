@@ -10,8 +10,8 @@
 
         <!-- Backdots -->
         <div class="absolute top-32 -left-8">
-            <div class="grid grid-cols-5 grid-flow-row gap-8">
-                <div v-for="index in 10" :key="index" :style="`background-color: ${charData.palettes[2]}`" class="opacity-10 w-16 h-16"></div>
+            <div class="grid grid-cols-7 grid-flow-row gap-8 w-160">
+                <div v-for="index in 14" :key="index" :style="`background-color: ${charData.palettes[2]}`" class="opacity-10 w-16 h-16"></div>
             </div>
         </div>
 
@@ -74,6 +74,7 @@
                     w-4 lg:w-auto
                     leading-relaxed">
             {{ charData.race }}
+            <div :style="`background-color: ${charData.palettes[2]}`" class="absolute hidden lg:block -left-4 -top-5 w-1 h-12 opacity-50 bg-gray-100"></div>
 
             <div class="relative hidden lg:block">
                 <div class="absolute -top-12 flex items-center">
