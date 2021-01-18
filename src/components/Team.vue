@@ -224,7 +224,7 @@
                             link: 'https://www.youtube.com/RaihanIkeda4RCh',
                         },
                         tagline: 'Trading Mang',
-                        motto: 'Interaction with people, Playing Game, Trading',
+                        motto: 'Interact with people - Playing game - Trading',
                         height: '170cm',
                         birthDate: 'April 4th',
                         age: '(Secret)',
