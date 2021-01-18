@@ -42,7 +42,7 @@ export default {
   created() {
     window.addEventListener("scroll", (event) => {
       let scroll = window.scrollY;
-      let hero = document.getElementById("hero");
+      let hero = document.getElementById("home");
 
       this.doNavbar = scroll + 36;
       this.heroHeight = hero.clientHeight;
