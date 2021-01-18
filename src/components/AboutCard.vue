@@ -21,9 +21,9 @@
         </div>
 
         <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 -left-4" v-if="shadowPosition == 'top-left'" :class="shadowColor"  ></div>
-        <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 -left-4 md:-right-4" v-if="shadowPosition == 'top-right'" :class="shadowColor"></div>
-        <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 md:-bottom-4 -left-4" v-if="shadowPosition == 'bottom-left'" :class="shadowColor"></div>
-        <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 md:-bottom-4 -left-4 md:-right-4" v-if="shadowPosition == 'bottom-right'" :class="shadowColor"></div>
+        <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 -left-4 lg:left-4" v-if="shadowPosition == 'top-right'" :class="shadowColor"></div>
+        <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 lg:top-4 -left-4" v-if="shadowPosition == 'bottom-left'" :class="shadowColor"></div>
+        <div class="hidden sm:block absolute w-full h-64 rounded-lg z-10 -top-4 lg:top-4 -left-4 lg:left-4" v-if="shadowPosition == 'bottom-right'" :class="shadowColor"></div>
     </div>
 </template>
 
@@ -31,7 +31,13 @@
     export default {
         name: 'AboutCard',
         mounted() {
-            this.shadowColor = this.cardColor.replace(/[0-9]/g, '') + parseInt(this.cardColor.replace(/[a-zA-Z\-]/g, '') - 200).toString();
+            switch (this.cardColor) {
+                case 'bg-gray-900': this.shadowColor = 'bg-gray-700'; break;
+                case 'bg-gray-800': this.shadowColor = 'bg-gray-600'; break;
+                case 'bg-gray-700': this.shadowColor = 'bg-gray-500'; break;
+                case 'bg-gray-600': this.shadowColor = 'bg-gray-400'; break;
+                default: break;
+            }
         },
         props: {
             shadowPosition: {
