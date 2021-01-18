@@ -44,13 +44,15 @@
                     hidden sm:block" style="letter-spacing: 0.625em" >
             {{ charData.name.split(' ')[0] }}
         </h1>
-        <p class="absolute z-10 serif text-gray-700 tracking-widest text-right
+        <p class="absolute z-10 serif text-gray-700 tracking-widest
+                    text-right lg:text-left
                     mt-4 md:mt-0
                     text-sm md:text-base
-                    lg:left-72
-                    right-10 lg:right-0
+                    lg:left-96
+                    ml-56 lg:ml-0
+                    right-10 md:right-44 lg:right-0
                     top-32 md:top-40
-                    w-64
+                    w-auto lg:w-64
                     leading-relaxed
                     hidden sm:block">
             {{ charData.bio }}

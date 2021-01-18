@@ -297,8 +297,8 @@
                         avatar: './assets/avatar/mizuki-aoi.png',
                         char: './assets/characters/mizuki-aoi.webp',
                         colorScheme: '#4985DA',
-                        bio: "",
-                        race: 'Blue Yōkai Fox',
+                        bio: "I'm a blue fox spirit, punished by Goddess Inari to guard my shrine alone because I once neglected my job as a shrine fox.",
+                        race: 'Fox Spirit',
                         palettes: [
                             '#4985DB',
                             '#3A6CBC',
