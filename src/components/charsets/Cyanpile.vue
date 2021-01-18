@@ -9,6 +9,13 @@
             <div :style="`background-color: ${charData.palettes[4]}`" class="absolute top-16 left-0 w-6 h-6"></div>
         </div>
 
+        <!-- Backdots -->
+        <div class="absolute top-44 -left-8">
+            <div class="grid grid-cols-7 grid-flow-row gap-8 w-160">
+                <div v-for="index in 14" :key="index" :style="index % 2 == 0 ? `background-color: ${charData.palettes[2]}` : `background-color: ${charData.palettes[4]}`" class="opacity-10 w-16 h-16"></div>
+            </div>
+        </div>
+
         <!-- Character image -->
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
