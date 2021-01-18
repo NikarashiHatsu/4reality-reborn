@@ -363,7 +363,7 @@
                         avatar: './assets/avatar/aura-lily.png',
                         char: './assets/characters/aura-lily.webp',
                         colorScheme: '#FDD3DA',
-                        bio: "Aloo 💕🌸 Namaku Aura Lily, aku adalah peri yang nyasar karena tersangkut oleh ekor serigala dan terbawa sampai ke Bar 4Reality. 💕🌸",
+                        bio: "Awloo! Namaku Aura Lily, aku adalah peri yang nyasar gara-gara nyangkut di ekor Itsuki, terus kebawa deh ke bar 4R",
                         race: 'Fairy',
                         palettes: [
                             '#FDD3DA',
