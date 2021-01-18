@@ -8,6 +8,17 @@
             <div :style="`background-color: ${charData.palettes[4]}`" class="absolute top-16 left-0 w-6 h-6"></div>
         </div>
 
+        <!-- Backdots -->
+        <div class="absolute top-32 -left-8">
+            <div class="grid grid-cols-7 grid-flow-row gap-8 w-160">
+                <div v-for="index in 14" :key="index" :style="`background-color: ${charData.palettes[2]}`" class="opacity-10 w-16 h-16"></div>
+            </div>
+        </div>
+
+        <!-- Lines beside character -->
+        <div :style="`background-color: ${charData.palettes[2]}`" class="absolute opacity-75 left-14 top-16 h-32 w-1"></div>
+        <div :style="`background-color: ${charData.palettes[2]}`" class="absolute opacity-75 left-16 top-36 h-32 w-1 ml-1"></div>
+
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
