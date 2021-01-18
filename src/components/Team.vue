@@ -119,6 +119,7 @@
                     <Vyula v-if="gen1Index == 3 && gen1Toggled" :charData="gen1[3]" />
 
                     <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
+                    <TorayamaZian v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
 
                     <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                     <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
@@ -136,6 +137,7 @@
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import MizukiAoi from "./charsets/MizukiAoi.vue";
     import RaihanIkeda from "./charsets/RaihanIkeda.vue";
+    import TorayamaZian from "./charsets/TorayamaZian.vue";
     import Vyula from "./charsets/Vyula.vue";
     import YuaDeyanara from "./charsets/YuaDeyanara.vue";
 
@@ -147,6 +149,7 @@
             KurokamiItsuki,
             MizukiAoi,
             RaihanIkeda,
+            TorayamaZian,
             Vyula,
             YuaDeyanara,
         },
@@ -323,6 +326,38 @@
                         height: '180cm (ears included)',
                         birthDate: 'February 29th',
                         age: '99',
+                    },
+                    {
+                        name: 'Torayama Zian',
+                        avatar: './assets/avatar/zian.png',
+                        char: './assets/characters/zian.webp',
+                        colorScheme: '#4985DA',
+                        bio: "",
+                        race: 'Demi-human',
+                        palettes: [
+                            '#F4A226',
+                            '#7F4E31',
+                            '#583828',
+                            '#721109',
+                            '#560809',
+                        ],
+                        facebook: {
+                            userName: '',
+                            link: '',
+                        },
+                        twitter: {
+                            userName: '@torayamazian',
+                            link: 'https://twitter.com/torayamazian',
+                        },
+                        youtube: {
+                            userName: '',
+                            link: '',
+                        },
+                        tagline: '',
+                        motto: '',
+                        height: '',
+                        birthDate: '',
+                        age: '',
                     }
                 ],
                 utaite: [
