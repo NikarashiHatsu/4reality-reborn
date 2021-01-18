@@ -181,7 +181,7 @@
                             link: 'https://web.facebook.com/kurokami.itsuki.3',
                         },
                         twitter: {
-                            userName: 'Kurokami Itsuki - イツキ「4 REALITY」',
+                            userName: '@itsuki4R',
                             link: 'https://twitter.com/itsuki4R',
                         },
                         youtube: {
@@ -213,7 +213,7 @@
                             link: 'https://web.facebook.com/raihan.ikeda.5',
                         },
                         twitter: {
-                            userName: 'Raihan Ikeda イケダ「4 REALITY」',
+                            userName: '@RaihanIkeda',
                             link: 'https://twitter.com/RaihanIkeda',
                         },
                         youtube: {
@@ -245,7 +245,7 @@
                             link: 'https://web.facebook.com/kkarennaws',
                         },
                         twitter: {
-                            userName: 'Karen - カレン「4 REALITY」',
+                            userName: '@Kareen4R',
                             link: 'https://twitter.com/kareen4r',
                         },
                         youtube: {
@@ -277,7 +277,7 @@
                             link: 'https://web.facebook.com/vel.vet.12576',
                         },
                         twitter: {
-                            userName: 'Vyula ビューラ 「4 REALITY」',
+                            userName: '@Vyula4R',
                             link: 'https://twitter.com/Vyula4R',
                         },
                         youtube: {
@@ -311,7 +311,7 @@
                             link: 'https://web.facebook.com/aoi.mizuki.7923',
                         },
                         twitter: {
-                            userName: 'Aoi - ミズキアオイ「4REALITY」',
+                            userName: '@mizukiaoii',
                             link: 'https://twitter.com/mizukiaoii',
                         },
                         youtube: {
@@ -345,7 +345,7 @@
                             link: 'https://www.facebook.com/CyanPile7295',
                         },
                         twitter: {
-                            userName: 'CYANPILE シアンパイル - 「4 REALITY」',
+                            userName: '@CyanPile4R',
                             link: 'https://twitter.com/CyanPile4R',
                         },
                         youtube: {
@@ -377,7 +377,7 @@
                             link: 'https://web.facebook.com/yuzuki.aurasha',
                         },
                         twitter: {
-                            userName: 'Aura Lily - 「4 REALITY」',
+                            userName: '@AuraLilyy',
                             link: 'https://twitter.com/AuraLilyy',
                         },
                         youtube: {
@@ -409,7 +409,7 @@
                             link: 'https://web.facebook.com/yua.deyanara',
                         },
                         twitter: {
-                            userName: 'Yua Deyanara - 「4 REALITY」',
+                            userName: '@yuadeyanara_',
                             link: 'https://twitter.com/yuadeyanara_',
                         },
                         youtube: {
