@@ -165,7 +165,7 @@
                     {
                         name: 'Kurokami Itsuki',
                         avatar: './assets/avatar/kurokami-itsuki.png',
-                        char: './assets/characters/kurokami-itsuki.png',
+                        char: './assets/characters/kurokami-itsuki.webp',
                         colorScheme: '#000000',
                         bio: "",
                         race: 'Werewolf',
@@ -197,7 +197,7 @@
                     {
                         name: 'Raihan Ikeda',
                         avatar: './assets/avatar/raihan-ikeda.png',
-                        char: './assets/characters/raihan-ikeda.png',
+                        char: './assets/characters/raihan-ikeda.webp',
                         colorScheme: '#B65D51',
                         bio: "",
                         race: 'Human',
@@ -229,7 +229,7 @@
                     {
                         name: 'Karen',
                         avatar: './assets/avatar/karen.png',
-                        char: './assets/characters/karen.png',
+                        char: './assets/characters/karen.webp',
                         colorScheme: '#C0A274',
                         bio: "I'm a Highschool student who often go to the internet cafe everyday and also momentum no... I have different personality when I change my glasses...",
                         race: 'Human',
@@ -261,7 +261,7 @@
                     {
                         name: 'Vyula',
                         avatar: './assets/avatar/vyula.png',
-                        char: './assets/characters/vyula.png',
+                        char: './assets/characters/vyula.webp',
                         colorScheme: '#2B6F9C',
                         bio: "A Prince from noble family, Living his life behind the darkness.",
                         race: 'Vampire',
@@ -295,7 +295,7 @@
                     {
                         name: 'Mizuki Aoi',
                         avatar: './assets/avatar/mizuki-aoi.png',
-                        char: './assets/characters/mizuki-aoi.png',
+                        char: './assets/characters/mizuki-aoi.webp',
                         colorScheme: '#4985DA',
                         bio: "",
                         race: 'Blue Yōkai Fox',
@@ -329,7 +329,7 @@
                     {
                         name: 'Cyanpile',
                         avatar: './assets/avatar/cyanpile.png',
-                        char: './assets/characters/cyanpile.png',
+                        char: './assets/characters/cyanpile.webp',
                         colorScheme: '#D49877',
                         bio: '',
                         race: 'Human',
@@ -361,7 +361,7 @@
                     {
                         name: 'Aura Lily',
                         avatar: './assets/avatar/aura-lily.png',
-                        char: './assets/characters/aura-lily.png',
+                        char: './assets/characters/aura-lily.webp',
                         colorScheme: '#FDD3DA',
                         bio: "Aloo 💕🌸 Namaku Aura Lily, aku adalah peri yang nyasar karena tersangkut oleh ekor serigala dan terbawa sampai ke Bar 4Reality. 💕🌸",
                         race: 'Fairy',
@@ -393,7 +393,7 @@
                     {
                         name: 'Yua Deyanara',
                         avatar: './assets/avatar/yua-deyanara.png',
-                        char: './assets/characters/yua-deyanara.png',
+                        char: './assets/characters/yua-deyanara.webp',
                         colorScheme: '#DDF5FB',
                         bio: "YUA is what's left from the virtual conciousness of a failed AI. Activated with no memory, she wish to get it back and understand why she was made.",
                         race: 'A.I',
