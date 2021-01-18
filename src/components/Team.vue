@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full py-12">
+    <div id="team" class="w-full py-12">
         <div class="max-w-6xl mx-auto">
             <h5 class="text-4xl sans-serif text-center">
                 Our Team

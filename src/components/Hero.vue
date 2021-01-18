@@ -1,5 +1,5 @@
 <template>
-    <div id="hero" class="relative">
+    <div id="home" class="relative">
         <!-- Main Content -->
         <div class="w-full h-screen bg-gray-900 mb-12 overflow-hidden">
             <div class="hero h-screen items-center flex max-w-6xl mx-auto

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center py-24 bg-gray-100 mt-4">
+    <div id="contact" class="flex justify-center py-24 bg-gray-100 mt-4">
         <div class="flex flex-col max-w-6xl mx-auto">
             <h1 class="text-4xl sans-serif text-center mb-16">
                 Contact Us

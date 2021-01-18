@@ -1,5 +1,5 @@
 <template>
-    <div class="about py-24 bg-gray-300 relative">
+    <div id="about" class="about py-24 bg-gray-300 relative">
         <!-- Particles -->
         <div class="w-full h-full -mt-24 absolute">
             <div class="w-full h-full overflow-hidden">
