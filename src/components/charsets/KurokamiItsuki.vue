@@ -8,6 +8,17 @@
             <div :style="`background-color: ${charData.palettes[4]}`" class="absolute top-16 left-0 w-6 h-6"></div>
         </div>
 
+        <!-- Backdots -->
+        <div class="absolute top-32 -left-8">
+            <div class="grid grid-cols-5 grid-flow-row gap-8">
+                <div v-for="index in 10" :key="index" :style="`background-color: ${charData.palettes[2]}`" class="opacity-10 w-16 h-16"></div>
+            </div>
+        </div>
+
+        <!-- Lines beside character -->
+        <div :style="`background-color: ${charData.palettes[2]}`" class="absolute opacity-75 left-14 top-16 h-32 w-1"></div>
+        <div :style="`background-color: ${charData.palettes[2]}`" class="absolute opacity-75 left-16 top-36 h-32 w-1 ml-1"></div>
+
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
@@ -56,14 +67,24 @@
                     hidden sm:block">
             {{ charData.bio }}
         </p>
-        <p class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
+        <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
-                    left-4 md:left-5 lg:left-32
+                    left-4 md:left-5 lg:left-64
                     top-32 md:top-32 lg:top-96
-                    w-4 lg:w-80
+                    w-4 lg:w-auto
                     leading-relaxed">
             {{ charData.race }}
-        </p>
+
+            <div class="relative hidden lg:block">
+                <div class="absolute -top-12 flex items-center">
+                    <img :src="'./assets/particles/rectangles-dot.png'" alt="">
+                    <svg class="w-2 text-gray-500 fill-current ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
         <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
             <div :style="'background-color: ' + charData.palettes[1]"
