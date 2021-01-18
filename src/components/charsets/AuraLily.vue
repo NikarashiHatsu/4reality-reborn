@@ -15,30 +15,36 @@
                     background-position-y: 0rem;
                     background-size: 100%;`" 
             class="absolute h-full z-20
-                    left-8 sm:left-0 md:left-8
+                    left-8 sm:-left-2 md:left-8
                     w-72 sm:w-96
                     top-16"></div>
 
         <!-- Lines beside the name -->
-        <div class="w-2 h-32 opacity-50 absolute top-0
-                    sm:left-100 md:left-120
-                    sm:-ml-6 md:-ml-10
+        <div class="opacity-50 absolute
+                    sm:w-32 lg:w-2
+                    sm:h-2 lg:h-32
+                    sm:top-14 lg:top-0
+                    sm:left-24 lg:left-120
+                    sm:-ml-6 md:-ml-10 lg:-ml-10
                     hidden sm:block" :style="`background-color: ${charData.palettes[1]}`"></div>
-        <div class="w-2 h-16 opacity-50 absolute top-60 
-                    sm:left-100 md:left-120 
-                    sm:ml-10 md:ml-6
+        <div class="opacity-50 absolute 
+                    sm:h-2 lg:h-16
+                    sm:w-16 lg:w-2
+                    sm:left-64 md:left-64 lg:left-120 
+                    sm:top-20 lg:top-56
+                    sm:ml-10 md:ml-6 lg:ml-6
                     hidden sm:block" :style="`background-color: ${charData.palettes[3]}`"></div>
 
         <!-- Main chara name - Top left -->
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-4xl
-                    w-96 sm:w-4
-                    top-10
-                    sm:left-96 md:left-112
+                    w-96 md:w-96 lg:w-4
+                    top-12 lg:top-10
+                    sm:left-16 lg:left-112
                     -right-24
                     break-normal sm:break-words">
-            {{ charData.name.split(' ')[0] }}
-            <span class="sm:hidden">
+            {{ charData.name.split(' ')[0] }} 
+            <span class="lg:hidden">
                 {{ charData.name.split(' ')[1] }}
             </span>
         </h2>
@@ -49,7 +55,7 @@
                     top-44
                     ml-8 md:ml-0
                     sm:left-100 md:left-124
-                    hidden sm:block">
+                    hidden lg:block">
             {{ charData.name.split(' ')[1] }}
         </h4>
         <!-- Secondary chara name (on the bottom) -->
@@ -60,17 +66,18 @@
                     hidden sm:block" style="letter-spacing: 0.625em" >
             {{ charData.name.split(' ')[1] }}
         </h1>
-        <!-- <p class="absolute z-10 serif text-gray-700 tracking-widest text-right
+        <p class="absolute z-10 serif text-gray-700 tracking-widest text-left
                     mt-4 md:mt-0
                     text-sm md:text-base
-                    lg:left-96
-                    right-10 lg:right-0
-                    top-32 md:top-40
-                    md:w-56 lg:w-64
+                    sm:ml-96 md:ml-100 lg:ml-10
+                    md:left-4 lg:left-120
+                    top-32 sm:top-8 md:top-20
+                    w-auto lg:w-96
+                    right-4 lg:right-0
                     leading-relaxed
                     hidden sm:block">
             {{ charData.bio }}
-        </p> -->
+        </p>
 
         <!-- Race -->
         <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
@@ -114,7 +121,7 @@
 
         <div class="absolute tracking-widest transform -rotate-60
                     md:pt-8 lg:pt-0
-                    opacity-40
+                    opacity-40 sm:opacity-20 md:opacity-40
                     -right-80 md:-right-48 lg:right-6 
                     bottom-64 md:bottom-64 lg:bottom-64">
             <h5 class="serif text-xl">
