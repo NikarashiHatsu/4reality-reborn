@@ -72,7 +72,7 @@
                     sm:ml-96 md:ml-100 lg:ml-10
                     md:left-4 lg:left-120
                     top-32 sm:top-8 md:top-20
-                    w-auto lg:w-96
+                    w-auto lg:w-72
                     right-4 lg:right-0
                     leading-relaxed
                     hidden sm:block">
@@ -121,7 +121,7 @@
 
         <div class="absolute tracking-widest transform -rotate-60
                     md:pt-8 lg:pt-0
-                    opacity-40 sm:opacity-20 md:opacity-40
+                    opacity-40 sm:opacity-20 lg:opacity-40
                     -right-80 md:-right-48 lg:right-6 
                     bottom-64 md:bottom-64 lg:bottom-64">
             <h5 class="serif text-xl">
