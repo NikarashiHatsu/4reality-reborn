@@ -8,7 +8,7 @@
 
         <div class="max-w-2xl mx-auto">
 
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-0 sm:gap-4 mt-12 justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-0 sm:gap-4 mt-12 justify-center">
                 <button :style="(gen1Toggled) ? toggledButtonColor : ''"
                         @click="toggleGen1()" 
                         class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
@@ -32,14 +32,6 @@
                                 rounded-t-none sm:rounded-t-md
                                 text-xs sm:text-base">
                     Utaite
-                </button>
-                <button :style="(staffToggled) ? toggledButtonColor : ''"
-                        @click="toggleStaff()" 
-                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                                focus:outline-none
-                                rounded-t-none sm:rounded-t-md
-                                text-xs sm:text-base">
-                    Staff
                 </button>
             </div>
         </div>
