@@ -137,7 +137,7 @@
         components: {
             SocialMedia,
         },
-        name: 'MizukiAoi',
+        name: 'TorayamaZian',
         props: ['charData'],
     }
 </script>

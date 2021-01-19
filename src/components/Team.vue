@@ -370,10 +370,10 @@
                         race: 'Human',
                         palettes: [
                             '#D49877',
-                            '#3D4050',
-                            '#2B3040',
                             '#825B4F',
                             '#69483F',
+                            '#3D4050',
+                            '#2B3040',
                         ],
                         facebook: {
                             userName: 'Cyanpile',
@@ -387,8 +387,8 @@
                             userName: 'CYANPILE Ch. シアンパイル 「4 REALITY」 ',
                             link: 'https://www.youtube.com/channel/UCaBDpGF4yhTgEscYYAbZDvA',
                         },
-                        tagline: '',
-                        motto: 'Traveling - Writing - Listening Music',
+                        tagline: 'dhlhmlz',
+                        motto: 'Work hard - Play hard - Istira hard',
                         height: '173cm',
                         birthDate: 'June 26th',
                         age: '(Secret)',

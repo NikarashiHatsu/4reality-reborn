@@ -148,7 +148,7 @@
         components: {
             SocialMedia,
         },
-        name: 'Karen',
+        name: 'AuraLily',
         props: ['charData'],
     }
 </script>
