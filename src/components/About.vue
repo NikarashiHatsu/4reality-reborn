@@ -10,7 +10,7 @@
                                 -left-32">
                         About
                     </div>
-                    <img class="absolute transform rotate-15 opacity-50 w-160 h-160 -bottom-24 -left-80" :src="'./assets/4r_logo.png'" alt="" />
+                    <img class="absolute transform rotate-15 opacity-50 w-160 h-160 -bottom-24 -left-80" :src="'./assets/4r_logo.webp'" alt="" />
                     <img class="absolute transform opacity-50
                                 hidden sm:block
                                 sm:bottom-200 lg:bottom-52 

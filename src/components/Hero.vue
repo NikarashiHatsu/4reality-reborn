@@ -34,7 +34,7 @@
                 <div class="relative">
                     <img class="w-40 md:w-80 
                                 h-40 md:h-80
-                                mb-8 md:mb-0" :src="'./assets/4r_logo.png'" alt="4R Logo" />
+                                mb-8 md:mb-0" :src="'./assets/4r_logo.webp'" alt="4R Logo" />
 
                     <img class="absolute z-10 
                                 -top-8 
