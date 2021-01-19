@@ -22,9 +22,9 @@
                     background-position-y: 0rem;
                     background-size: 100%;`" 
             class="absolute h-full z-20
-                    left-8
-                    w-52 sm:w-52
-                    top-16"></div>
+                    left-8 md:-left-2 lg:-left-8
+                    w-52 sm:w-64
+                    top-16 sm:top-12"></div>
 
         <!-- Lines beside the name -->
         <div class="h-4 opacity-50 absolute 
@@ -113,13 +113,14 @@
 
         <div class="absolute tracking-widest transform -rotate-60 text-gray-8
                     md:pt-8 lg:pt-0
-                    opacity-40
-                    -right-80 md:-right-48 lg:right-6 
-                    bottom-64 md:bottom-64 lg:bottom-64">
+                    opacity-20
+                    -right-40 md:-right-24 lg:-right-6
+                    bottom-48 md:bottom-52 lg:bottom-64">
             <h5 class="serif text-xl">
                 {{ charData.motto }}
             </h5>
-            <h1 class="serif text-8xl mt-2 uppercase tracking-tagline">
+            <h1 class="serif mt-2 uppercase tracking-tagline
+                        text-6xl md:text-7xl lg:text-8xl">
                 {{ charData.tagline }}
             </h1>
         </div>
@@ -133,7 +134,7 @@
         components: {
             SocialMedia,
         },
-        name: 'Karen',
+        name: 'Cyanpile',
         props: ['charData'],
     }
 </script>
