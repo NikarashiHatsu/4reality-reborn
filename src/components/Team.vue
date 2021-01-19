@@ -120,6 +120,7 @@
 
                     <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
                     <TorayamaZian v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
+                    <AkariIchika v-if="gen2Index == 2 && gen2Toggled" :charData="gen2[2]" />
 
                     <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                     <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
@@ -131,6 +132,7 @@
 </template>
 
 <script>
+    import AkariIchika from "./charsets/AkariIchika.vue";
     import AuraLily from "./charsets/AuraLily.vue";
     import Cyanpile from "./charsets/Cyanpile.vue";
     import Karen from "./charsets/Karen.vue";
@@ -143,6 +145,7 @@
 
     export default {
         components: {
+            AkariIchika,
             AuraLily,
             Cyanpile,
             Karen,
@@ -357,6 +360,38 @@
                         motto: 'Traveling - Reading - Studying - If it\'s bitter add some sugar!',
                         height: '178cm',
                         birthDate: 'July 27th',
+                        age: '',
+                    },
+                    {
+                        name: 'Akari Ichika',
+                        avatar: './assets/avatar/akari-ichika.png',
+                        char: './assets/characters/akari-ichika.webp',
+                        colorScheme: '#9C3942',
+                        bio: "",
+                        race: 'Succubus',
+                        palettes: [
+                            '#FFFFFF',
+                            '#AF9BB4',
+                            '#3B3A4E',
+                            '#9C3942',
+                            '#762535',
+                        ],
+                        facebook: {
+                            userName: 'Ichika Akari',
+                            link: 'https://www.facebook.com/akariichikachan',
+                        },
+                        twitter: {
+                            userName: '@akariichikachan',
+                            link: 'https://twitter.com/akariichikachan',
+                        },
+                        youtube: {
+                            userName: 'Akari Ichika Ch. 「4REALITY」',
+                            link: 'https://www.youtube.com/channel/UCaeDIzZWlTmOpy0Z7ypwvwA',
+                        },
+                        tagline: '',
+                        motto: '',
+                        height: '145cm',
+                        birthDate: 'January 18th',
                         age: '',
                     }
                 ],
