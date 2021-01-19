@@ -174,7 +174,7 @@
                         char: './assets/characters/kurokami-itsuki.webp',
                         colorScheme: '#000000',
                         bio: "",
-                        race: 'Werewolf',
+                        race: 'Wolf',
                         palettes: [
                             '#595860',
                             '#414147',
@@ -237,7 +237,7 @@
                         avatar: './assets/avatar/karen.png',
                         char: './assets/characters/karen.webp',
                         colorScheme: '#C0A274',
-                        bio: "I'm a Highschool student who often go to the internet cafe everyday and also momentum no... I have different personality when I change my glasses...",
+                        bio: "I'm a Highschool student who often go to the internet cafe everyday and also momentum no... I have different personality when I take off my glasses...",
                         race: 'Human',
                         palettes: [
                             '#F9E5C7',
