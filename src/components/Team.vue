@@ -311,9 +311,9 @@
                 ],
                 gen2: [
                     {
-                        name: 'Zuya Lestrange',
-                        avatar: './assets/avatar/zuya-lestrange.png',
-                        char: './assets/characters/zuya-lestrange.webp',
+                        name: 'Gill Zuya Lestrange',
+                        avatar: './assets/avatar/gill-zuya-lestrange.png',
+                        char: './assets/characters/gill-zuya-lestrange.webp',
                         colorScheme: '#9C3942',
                         bio: "",
                         race: 'Human',
@@ -325,21 +325,21 @@
                             '#762535',
                         ],
                         facebook: {
-                            userName: 'Ichika Akari',
-                            link: 'https://www.facebook.com/akariichikachan',
+                            userName: 'Zuya Lestrange',
+                            link: 'https://www.facebook.com/zuya.lestrange',
                         },
                         twitter: {
-                            userName: '@akariichikachan',
-                            link: 'https://twitter.com/akariichikachan',
+                            userName: '@Gill_Zuya',
+                            link: 'https://twitter.com/Gill_Zuya',
                         },
                         youtube: {
-                            userName: 'Akari Ichika Ch. 「4REALITY」',
-                            link: 'https://www.youtube.com/channel/UCaeDIzZWlTmOpy0Z7ypwvwA',
+                            userName: 'Zuya ズヤ Ch.「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCs7BXe4mGtUIwnE4oPVKTDw',
                         },
                         tagline: '',
                         motto: '',
-                        height: '145cm',
-                        birthDate: 'January 18th',
+                        height: '',
+                        birthDate: 'August 18th',
                         age: '',
                     },
                     {
