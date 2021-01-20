@@ -95,33 +95,26 @@
         </div>
 
         <!-- Right panel -->
-        <div class="w-200 z-0 right-0 top-0 h-full absolute overflow-hidden">
+        <div class="w-200 z-0 top-0 h-full absolute overflow-hidden
+                    -mr-8 sm:mr-0
+                    -right-80 sm:-right-80 md:-right-60 lg:-right-32 xl:right-0">
             <div :style="'background-color: ' + charData.palettes[3]"
-                 class="absolute w-160 h-240 transform rotate-30 z-0
-                        md:-top-26 lg:-top-12 
-                        -right-112 sm:-right-112 md:-right-96 lg:-right-32" id="bg-1"></div>
-            <div class="absolute w-4 bg-white h-240 transform rotate-30 z-10
-                        md:-top-32 lg:-top-32 
-                        right-52 sm:right-52 md:right-64 lg:right-120" id="stripe"></div>
+                 class="absolute w-160 h-240 transform rotate-30 z-0 -top-12 -right-32" id="bg-1"></div>
+            <div class="absolute w-4 bg-white h-240 transform rotate-30 z-10 -top-32 right-120" id="stripe"></div>
             <div :style="'background-color: ' + charData.palettes[0]"
-                 class="absolute w-160 h-240 transform rotate-30 z-0
-                        md:-top-24 lg:-top-20 
-                        -right-120 sm:-right-120 md:-right-100 lg:-right-44" id="bg-2"></div>
+                 class="absolute w-160 h-240 transform rotate-30 z-0 -top-20 -right-44" id="bg-2"></div>
         </div>
 
-        <SocialMedia class="text-gray-800 opacity-75" :charData="charData" />
+        <SocialMedia class="text-gray-800 opacity-40" :charData="charData" />
 
-        <div class="absolute tracking-widest transform -rotate-60 text-gray-8
-                    md:pt-8 lg:pt-0
-                    opacity-20
-                    -right-40 md:-right-24 lg:-right-6
-                    bottom-48 md:bottom-52 lg:bottom-64">
-            <h5 class="serif text-xl">
+        <div class="absolute tracking-widest transform -rotate-60 opacity-25 bottom-64
+                    -mr-6 sm:-mr-3 md:-mr-4 lg:mr-2 xl:mr-0
+                    -right-60 sm:-right-56 md:-right-36 lg:-right-14 xl:right-20">
+            <h5 class="serif text-xl w-160">
                 {{ charData.motto }}
             </h5>
-            <h1 class="serif mt-2 uppercase tracking-tagline
-                        text-6xl md:text-7xl lg:text-8xl">
-                {{ charData.tagline }}
+            <h1 class="serif mt-2 text-4xl sm:text-5xl uppercase tracking-tagline">
+                <span>{{ charData.tagline }}</span>
             </h1>
         </div>
     </div>
