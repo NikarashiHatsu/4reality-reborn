@@ -116,18 +116,20 @@
                     <transition-group
                         enter-active-class="transition-all transition-slowest"
                         leave-active-class="transition-all transition-slowest"
-                        enter-class="opacity-50"
+                        enter-class="opacity-50 scale-0"
                         enter-to-class="opacity-100"
                         leave-class="opacity-100"
-                        leave-to-class="opacity-50">
+                        leave-to-class="opacity-50"
+                        tag="div.w-full.h-full.relative">
                         <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
                         <RaihanIkeda v-if="gen1Index == 1 && gen1Toggled" :charData="gen1[1]" />
                         <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
                         <Vyula v-if="gen1Index == 3 && gen1Toggled" :charData="gen1[3]" />
 
-                        <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
-                        <TorayamaZian v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
-                        <AkariIchika v-if="gen2Index == 2 && gen2Toggled" :charData="gen2[2]" />
+                        <GillZuyaLestrange v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
+                        <MizukiAoi v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
+                        <TorayamaZian v-if="gen2Index == 2 && gen2Toggled" :charData="gen2[2]" />
+                        <AkariIchika v-if="gen2Index == 3 && gen2Toggled" :charData="gen2[3]" />
 
                         <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                         <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
@@ -143,6 +145,7 @@
     import AkariIchika from "./charsets/AkariIchika.vue";
     import AuraLily from "./charsets/AuraLily.vue";
     import Cyanpile from "./charsets/Cyanpile.vue";
+    import GillZuyaLestrange from './charsets/GillZuyaLestrange.vue';
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import MizukiAoi from "./charsets/MizukiAoi.vue";
@@ -156,6 +159,7 @@
             AkariIchika,
             AuraLily,
             Cyanpile,
+            GillZuyaLestrange,
             Karen,
             KurokamiItsuki,
             MizukiAoi,
