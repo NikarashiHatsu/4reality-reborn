@@ -68,11 +68,11 @@
                     <img class="absolute z-0 
                                 transform rotate-90 sm:rotate-0
                                 bottom-4 sm:bottom-2 
-                                left-0 sm:left-2" :src="'./assets/particles/rectangles-dot.png'" />
+                                left-0 sm:left-2" :src="'./assets/particles/rectangles-dot.png'" alt="rectangles" />
                     <img class="absolute z-0
                                 transform rotate-90 sm:rotate-0
                                 top-4 sm:top-2 
-                                right-0 sm:right-2" :src="'./assets/particles/rectangles-dot.png'" />
+                                right-0 sm:right-2" :src="'./assets/particles/rectangles-dot.png'" alt="rectangles" />
 
                     <div class="absolute flex w-full justify-center items-center
                                 flex-row sm:flex-col"
@@ -81,6 +81,7 @@
                             :key="index" 
                             :src="chars.avatar"
                             @click="changeGen1(index)"
+                            :alt="chars.name"
                             class="w-16 h-16 object-fit
                                     mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
                                     cursor-pointer">
@@ -92,6 +93,7 @@
                             :key="index" 
                             :src="chars.avatar"
                             @click="changeGen2(index)"
+                            :alt='chars.name'
                             class="w-16 h-16 object-fit
                                     mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
                                     cursor-pointer">
@@ -103,6 +105,7 @@
                             :key="index" 
                             :src="chars.avatar"
                             @click="changeUtaiteIndex(index)"
+                            :name="chars.name"
                             class="w-16 h-16 object-fit
                                     mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
                                     cursor-pointer">
