@@ -113,18 +113,26 @@
                             h-screen sm:h-auto
                             border-r-0 sm:border-r
                             overflow-hidden" style="height: 625px">
-                    <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
-                    <RaihanIkeda v-if="gen1Index == 1 && gen1Toggled" :charData="gen1[1]" />
-                    <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
-                    <Vyula v-if="gen1Index == 3 && gen1Toggled" :charData="gen1[3]" />
+                    <transition-group
+                        enter-active-class="transition-all transition-slowest"
+                        leave-active-class="transition-all transition-slowest"
+                        enter-class="opacity-50"
+                        enter-to-class="opacity-100"
+                        leave-class="opacity-100"
+                        leave-to-class="opacity-50">
+                        <KurokamiItsuki v-if="gen1Index == 0 && gen1Toggled" :charData="gen1[0]" />
+                        <RaihanIkeda v-if="gen1Index == 1 && gen1Toggled" :charData="gen1[1]" />
+                        <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
+                        <Vyula v-if="gen1Index == 3 && gen1Toggled" :charData="gen1[3]" />
 
-                    <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
-                    <TorayamaZian v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
-                    <AkariIchika v-if="gen2Index == 2 && gen2Toggled" :charData="gen2[2]" />
+                        <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
+                        <TorayamaZian v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
+                        <AkariIchika v-if="gen2Index == 2 && gen2Toggled" :charData="gen2[2]" />
 
-                    <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
-                    <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
-                    <YuaDeyanara v-if="utaiteIndex == 2 && utaiteToggled" :charData="utaite[2]" />
+                        <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
+                        <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
+                        <YuaDeyanara v-if="utaiteIndex == 2 && utaiteToggled" :charData="utaite[2]" />
+                    </transition-group>
                 </div>
             </div>
         </div>
@@ -298,6 +306,38 @@
                     }
                 ],
                 gen2: [
+                    {
+                        name: 'Zuya Lestrange',
+                        avatar: './assets/avatar/zuya-lestrange.png',
+                        char: './assets/characters/zuya-lestrange.webp',
+                        colorScheme: '#9C3942',
+                        bio: "",
+                        race: 'Human',
+                        palettes: [
+                            '#FFFFFF',
+                            '#AF9BB4',
+                            '#3B3A4E',
+                            '#9C3942',
+                            '#762535',
+                        ],
+                        facebook: {
+                            userName: 'Ichika Akari',
+                            link: 'https://www.facebook.com/akariichikachan',
+                        },
+                        twitter: {
+                            userName: '@akariichikachan',
+                            link: 'https://twitter.com/akariichikachan',
+                        },
+                        youtube: {
+                            userName: 'Akari Ichika Ch. 「4REALITY」',
+                            link: 'https://www.youtube.com/channel/UCaeDIzZWlTmOpy0Z7ypwvwA',
+                        },
+                        tagline: '',
+                        motto: '',
+                        height: '145cm',
+                        birthDate: 'January 18th',
+                        age: '',
+                    },
                     {
                         name: 'Mizuki Aoi',
                         avatar: './assets/avatar/mizuki-aoi.png',
