@@ -56,16 +56,21 @@
                     hidden sm:block" style="letter-spacing: 0.625em" >
             {{ charData.name.split(' ')[1] }}
         </h1>
-        <p class="absolute z-10 serif text-gray-700 tracking-widest text-right
+        <p class="absolute z-10 serif text-gray-700 tracking-widest 
+                    text-right md:text-left lg:text-right
                     mt-4 md:mt-0
                     text-sm md:text-base
-                    lg:left-72
-                    right-10 lg:right-0
+                    md:left-56 lg:left-72
+                    right-32 lg:right-0
                     top-32 md:top-40
                     w-64
                     leading-relaxed
                     hidden sm:block">
             {{ charData.bio }}
+
+            <span class="hidden lg:block relative">
+                <div :style="`background-color: ${charData.palettes[2]}`" class="absolute -top-52 -right-8 opacity-75 w-1 h-48"></div>
+            </span>
         </p>
         <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
@@ -73,8 +78,8 @@
                     top-32 md:top-32 lg:top-96
                     w-4 lg:w-auto
                     leading-relaxed">
-            {{ charData.race }}
-            <div :style="`background-color: ${charData.palettes[2]}`" class="absolute hidden lg:block -left-4 -top-5 w-1 h-12 opacity-50 bg-gray-100"></div>
+            <p class="text-left">{{ charData.race }}</p>
+            <div :style="`background-color: ${charData.palettes[2]}`" class="absolute hidden lg:block -left-4 -top-6 w-1 h-26 opacity-50 bg-gray-100"></div>
 
             <div class="relative hidden lg:block">
                 <div class="absolute -top-12 flex items-center">
@@ -85,6 +90,14 @@
                     </svg>
                 </div>
             </div>
+
+            <span class="hidden lg:block text-left text-xs">
+                {{ charData.height }}
+            </span>
+
+            <p class="mt-4 hidden lg:block text-left text-xs">
+                {{ charData.age }}
+            </p>
         </div>
 
         <div class="w-200 z-0 top-0 h-full absolute overflow-hidden
@@ -102,7 +115,7 @@
         <div class="absolute tracking-widest transform -rotate-60 opacity-25 bottom-64
                     -mr-6 sm:-mr-3 md:-mr-4 lg:mr-2 xl:mr-0
                     -right-60 sm:-right-56 md:-right-36 lg:-right-14 xl:right-20">
-            <h5 class="serif text-xl w-160">
+            <h5 class="serif text-xl w-160 text-white">
                 {{ charData.motto }}
             </h5>
             <h1 class="serif mt-2 text-4xl sm:text-5xl uppercase text-white tracking-tagline">
