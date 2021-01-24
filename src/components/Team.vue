@@ -372,7 +372,7 @@
                             link: 'https://www.youtube.com/channel/UCpzRn1NafleJlKUMRg0Rdrw',
                         },
                         tagline: 'Kon-Awi',
-                        motto: 'Gaming And Voice Acting',
+                        motto: 'Gaming',
                         height: '180cm',
                         birthDate: 'February 29th',
                         age: '99',
