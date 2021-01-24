@@ -129,14 +129,11 @@
                         <Karen v-if="gen1Index == 2 && gen1Toggled" :charData="gen1[2]" />
                         <Vyula v-if="gen1Index == 3 && gen1Toggled" :charData="gen1[3]" />
 
-                        <GillZuyaLestrange v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
-                        <MizukiAoi v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
-                        <TorayamaZian v-if="gen2Index == 2 && gen2Toggled" :charData="gen2[2]" />
-                        <AkariIchika v-if="gen2Index == 3 && gen2Toggled" :charData="gen2[3]" />
+                        <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
+                        <AkariIchika v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
 
-                        <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
-                        <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
-                        <YuaDeyanara v-if="utaiteIndex == 2 && utaiteToggled" :charData="utaite[2]" />
+                        <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
+                        <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
                     </transition-group>
                 </div>
             </div>
@@ -147,13 +144,10 @@
 <script>
     import AkariIchika from "./charsets/AkariIchika.vue";
     import AuraLily from "./charsets/AuraLily.vue";
-    import Cyanpile from "./charsets/Cyanpile.vue";
-    import GillZuyaLestrange from './charsets/GillZuyaLestrange.vue';
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import MizukiAoi from "./charsets/MizukiAoi.vue";
     import RaihanIkeda from "./charsets/RaihanIkeda.vue";
-    import TorayamaZian from "./charsets/TorayamaZian.vue";
     import Vyula from "./charsets/Vyula.vue";
     import YuaDeyanara from "./charsets/YuaDeyanara.vue";
 
@@ -161,13 +155,10 @@
         components: {
             AkariIchika,
             AuraLily,
-            Cyanpile,
-            GillZuyaLestrange,
             Karen,
             KurokamiItsuki,
             MizukiAoi,
             RaihanIkeda,
-            TorayamaZian,
             Vyula,
             YuaDeyanara,
         },
@@ -180,8 +171,7 @@
                 gen1Index: 0,
                 gen2Index: 0,
                 utaiteIndex: 0,
-                staffIndex: 0,
-                
+
                 gen1: [
                     {
                         name: 'Kurokami Itsuki',
@@ -314,38 +304,6 @@
                 ],
                 gen2: [
                     {
-                        name: 'Gill Zuya Lestrange',
-                        avatar: './assets/avatar/gill-zuya-lestrange.png',
-                        char: './assets/characters/gill-zuya-lestrange.webp',
-                        colorScheme: '#9C3942',
-                        bio: "",
-                        race: 'Human',
-                        palettes: [
-                            '#FFFFFF',
-                            '#AF9BB4',
-                            '#3B3A4E',
-                            '#9C3942',
-                            '#762535',
-                        ],
-                        facebook: {
-                            userName: 'Zuya Lestrange',
-                            link: 'https://www.facebook.com/zuya.lestrange',
-                        },
-                        twitter: {
-                            userName: '@Gill_Zuya',
-                            link: 'https://twitter.com/Gill_Zuya',
-                        },
-                        youtube: {
-                            userName: 'Zuya ズヤ Ch.「4 REALITY」',
-                            link: 'https://www.youtube.com/channel/UCs7BXe4mGtUIwnE4oPVKTDw',
-                        },
-                        tagline: '',
-                        motto: '',
-                        height: '',
-                        birthDate: 'August 18th',
-                        age: '',
-                    },
-                    {
                         name: 'Mizuki Aoi',
                         avatar: './assets/avatar/mizuki-aoi.png',
                         char: './assets/characters/mizuki-aoi.webp',
@@ -376,38 +334,6 @@
                         height: '180cm',
                         birthDate: 'February 29th',
                         age: '99',
-                    },
-                    {
-                        name: 'Torayama Zian',
-                        avatar: './assets/avatar/zian.png',
-                        char: './assets/characters/zian.webp',
-                        colorScheme: '#4985DA',
-                        bio: "",
-                        race: 'Demi-human',
-                        palettes: [
-                            '#F4A226',
-                            '#7F4E31',
-                            '#583828',
-                            '#721109',
-                            '#560809',
-                        ],
-                        facebook: {
-                            userName: '',
-                            link: '',
-                        },
-                        twitter: {
-                            userName: '@torayamazian',
-                            link: 'https://twitter.com/torayamazian',
-                        },
-                        youtube: {
-                            userName: 'Zian Ch. 虎山じあん「4 REALITY」',
-                            link: 'https://www.youtube.com/channel/UCFoFuPiMX1fqWwQWwNeV0RQ',
-                        },
-                        tagline: 'Yabe',
-                        motto: 'Traveling - Reading - Studying - If it\'s bitter add some sugar!',
-                        height: '178cm',
-                        birthDate: 'July 27th',
-                        age: '',
                     },
                     {
                         name: 'Akari Ichika',
@@ -443,38 +369,6 @@
                     }
                 ],
                 utaite: [
-                    {
-                        name: 'Cyanpile',
-                        avatar: './assets/avatar/cyanpile.png',
-                        char: './assets/characters/cyanpile.webp',
-                        colorScheme: '#D49877',
-                        bio: '',
-                        race: 'Human',
-                        palettes: [
-                            '#D49877',
-                            '#825B4F',
-                            '#69483F',
-                            '#3D4050',
-                            '#2B3040',
-                        ],
-                        facebook: {
-                            userName: 'Cyanpile',
-                            link: 'https://www.facebook.com/CyanPile7295',
-                        },
-                        twitter: {
-                            userName: '@CyanPile4R',
-                            link: 'https://twitter.com/CyanPile4R',
-                        },
-                        youtube: {
-                            userName: 'CYANPILE Ch. シアンパイル 「4 REALITY」 ',
-                            link: 'https://www.youtube.com/channel/UCaBDpGF4yhTgEscYYAbZDvA',
-                        },
-                        tagline: 'dhlhmlz',
-                        motto: 'Work hard - Play hard - Istira hard',
-                        height: '173cm',
-                        birthDate: 'June 26th',
-                        age: '(Secret)',
-                    },
                     {
                         name: 'Aura Lily',
                         avatar: './assets/avatar/aura-lily.png',
