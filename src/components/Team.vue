@@ -373,6 +373,38 @@
                 ],
                 utaite: [
                     {
+                        name: 'Cyanpile',
+                        avatar: './assets/avatar/cyanpile.png',
+                        char: './assets/characters/cyanpile.webp',
+                        colorScheme: '#D49877',
+                        bio: '',
+                        race: 'Human',
+                        palettes: [
+                            '#D49877',
+                            '#825B4F',
+                            '#69483F',
+                            '#3D4050',
+                            '#2B3040',
+                        ],
+                        facebook: {
+                            userName: 'Cyanpile',
+                            link: 'https://www.facebook.com/CyanPile7295',
+                        },
+                        twitter: {
+                            userName: '@CyanPile4R',
+                            link: 'https://twitter.com/CyanPile4R',
+                        },
+                        youtube: {
+                            userName: 'CYANPILE Ch. シアンパイル 「4 REALITY」 ',
+                            link: 'https://www.youtube.com/channel/UCaBDpGF4yhTgEscYYAbZDvA',
+                        },
+                        tagline: 'dhlhmlz',
+                        motto: 'Work hard - Play hard - Istira hard',
+                        height: '173cm',
+                        birthDate: 'June 26th',
+                        age: '(Secret)',
+                    },
+                    {
                         name: 'Aura Lily',
                         avatar: './assets/avatar/aura-lily.png',
                         char: './assets/characters/aura-lily.webp',
