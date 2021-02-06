@@ -132,8 +132,9 @@
                         <MizukiAoi v-if="gen2Index == 0 && gen2Toggled" :charData="gen2[0]" />
                         <AkariIchika v-if="gen2Index == 1 && gen2Toggled" :charData="gen2[1]" />
 
-                        <AuraLily v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
-                        <YuaDeyanara v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
+                        <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
+                        <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
+                        <YuaDeyanara v-if="utaiteIndex == 2 && utaiteToggled" :charData="utaite[2]" />
                     </transition-group>
                 </div>
             </div>
@@ -144,6 +145,7 @@
 <script>
     import AkariIchika from "./charsets/AkariIchika.vue";
     import AuraLily from "./charsets/AuraLily.vue";
+    import Cyanpile from "./charsets/Cyanpile.vue";
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
     import MizukiAoi from "./charsets/MizukiAoi.vue";
@@ -155,6 +157,7 @@
         components: {
             AkariIchika,
             AuraLily,
+            Cyanpile,
             Karen,
             KurokamiItsuki,
             MizukiAoi,
@@ -334,38 +337,6 @@
                         height: '180cm',
                         birthDate: 'February 29th',
                         age: '99',
-                    },
-                    {
-                        name: 'Torayama Zian',
-                        avatar: './assets/avatar/torayama-zian.png',
-                        char: './assets/characters/torayama-zian.webp',
-                        colorScheme: '#4985DA',
-                        bio: "",
-                        race: 'Demi-human',
-                        palettes: [
-                            '#F4A226',
-                            '#7F4E31',
-                            '#583828',
-                            '#721109',
-                            '#560809',
-                        ],
-                        facebook: {
-                            userName: '',
-                            link: '',
-                        },
-                        twitter: {
-                            userName: '@torayamazian',
-                            link: 'https://twitter.com/torayamazian',
-                        },
-                        youtube: {
-                            userName: 'Zian Ch. 虎山じあん「4 REALITY」',
-                            link: 'https://www.youtube.com/channel/UCFoFuPiMX1fqWwQWwNeV0RQ',
-                        },
-                        tagline: 'Kopi',
-                        motto: 'Traveling - Reading - Studying - If it\'s bitter add some sugar!',
-                        height: '178cm',
-                        birthDate: 'July 27th',
-                        age: '',
                     },
                     {
                         name: 'Akari Ichika',
