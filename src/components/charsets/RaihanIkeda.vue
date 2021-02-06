@@ -22,17 +22,17 @@
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
-                    background-size: 100%;`" 
+                    background-size: 65%;`" 
             class="absolute h-full z-20
-                    -left-4 sm:-left-16 md:-left-12 lg:-left-16
-                    w-72 sm:w-96
-                    top-8"></div>
+                    left-8 sm:left-6 md:left-6 lg:-left-2
+                    top-12 sm:top-12 md:top-8 lg:top-8
+                    w-72 sm:w-96"></div>
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-2xl sm:text-5xl
                     w-56 sm:w-auto
                     text-right sm:text-left
                     top-3 sm:top-8 md:top-10 lg:top-18
-                    left-20 sm:left-44 md:left-52 lg:left-48
+                    left-20 sm:left-48 md:left-52 lg:left-48
                     -right-14 sm:right-0 md:right-0 lg:right-0
                     break-normal sm:break-words">
             {{ charData.name.split(' ')[0] }}
@@ -44,7 +44,7 @@
                     text-3xl
                     ml-8 md:ml-0
                     sm:top-24 md:top-24
-                    sm:left-40 md:left-60 lg:left-80
+                    sm:left-48 md:left-60 lg:left-80
                     sm:right-6 md:right-28
                     hidden sm:block">
             {{ charData.name.split(' ')[1] }}
@@ -54,7 +54,7 @@
                     -left-4 md:left-0
                     opacity-10
                     hidden sm:block" style="letter-spacing: 0.625em" >
-            {{ charData.name.split(' ')[1] }}
+            {{ charData.name.split(' ')[0] }}
         </h1>
         <p class="absolute z-10 serif text-gray-700 tracking-widest text-right
                     mt-4 md:mt-0

@@ -20,11 +20,11 @@
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
-                    background-size: 100%;`" 
+                    background-size: 90%;`" 
             class="absolute h-full z-20
-                    -left-4 sm:left-0 md:-left-4
-                    w-72 sm:w-96
-                    top-20 sm:top-8"></div>
+                    left-4 sm:-left-8 md:-left-8 lg:-left-6
+                    top-20 sm:top-12 md:top-12 lg:top-12
+                    w-72 sm:w-96"></div>
 
         <!-- Main chara name - top -->
         <div class="absolute serif uppercase text-gray-700 leading-tight tracking-tagline z-10

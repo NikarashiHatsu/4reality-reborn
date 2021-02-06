@@ -24,9 +24,9 @@
                     background-position-y: 0rem;
                     background-size: 100%;`" 
             class="absolute h-full z-20
-                    -left-4 sm:-left-16 md:-left-12 lg:-left-16
-                    w-72 sm:w-96
-                    top-8"></div>
+                    left-0 sm:-left-8 md:-left-8 lg:-left-12
+                    top-12 sm:top-12 md:top-12 lg:top-8
+                    w-72 sm:w-96"></div>
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-2xl sm:text-5xl
                     w-56 sm:w-auto
