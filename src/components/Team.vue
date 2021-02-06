@@ -336,6 +336,38 @@
                         age: '99',
                     },
                     {
+                        name: 'Torayama Zian',
+                        avatar: './assets/avatar/torayama-zian.png',
+                        char: './assets/characters/torayama-zian.webp',
+                        colorScheme: '#4985DA',
+                        bio: "",
+                        race: 'Demi-human',
+                        palettes: [
+                            '#F4A226',
+                            '#7F4E31',
+                            '#583828',
+                            '#721109',
+                            '#560809',
+                        ],
+                        facebook: {
+                            userName: '',
+                            link: '',
+                        },
+                        twitter: {
+                            userName: '@torayamazian',
+                            link: 'https://twitter.com/torayamazian',
+                        },
+                        youtube: {
+                            userName: 'Zian Ch. 虎山じあん「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCFoFuPiMX1fqWwQWwNeV0RQ',
+                        },
+                        tagline: 'Kopi',
+                        motto: 'Traveling - Reading - Studying - If it\'s bitter add some sugar!',
+                        height: '178cm',
+                        birthDate: 'July 27th',
+                        age: '',
+                    },
+                    {
                         name: 'Akari Ichika',
                         avatar: './assets/avatar/akari-ichika.png',
                         char: './assets/characters/akari-ichika.webp',

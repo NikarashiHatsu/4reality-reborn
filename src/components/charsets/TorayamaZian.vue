@@ -22,11 +22,11 @@
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
-                    background-size: 75%;`" 
+                    background-size: 85%;`" 
             class="absolute h-full z-20
-                    left-6 sm:left-8 md:left-8 lg:left-4
-                    w-80 sm:w-96
-                    top-8 sm:top-12"></div>
+                    left-8 sm:left-6 md:left-8 lg:-left-4
+                    top-20 sm:top-20 md:top-20 lg:top-16
+                    w-72 sm:w-96"></div>
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-2xl sm:text-5xl
                     w-32 sm:w-auto

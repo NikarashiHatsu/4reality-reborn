@@ -24,11 +24,11 @@
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
-                    background-size: 100%;`" 
+                    background-size: 80%;`" 
             class="absolute h-full z-20
-                    -left-4 sm:left-0 md:-left-16
-                    w-72 sm:w-96
-                    top-16"></div>
+                    left-4 sm:-left-2 md:-left-6 lg:-left-4
+                    top-12 sm:top-12 md:top-12 lg:top-12
+                    w-72 sm:w-96"></div>
         
         <!-- Main chara name -->
         <h1 class="absolute serif uppercase text-gray-700

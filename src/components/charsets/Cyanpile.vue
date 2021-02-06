@@ -20,11 +20,11 @@
         <div :style="`background-image: url(${charData.char}); 
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
-                    background-size: 100%;`" 
+                    background-size: 85%;`" 
             class="absolute h-full z-20
-                    left-8 md:-left-2 lg:-left-8
-                    w-52 sm:w-64
-                    top-16 sm:top-12"></div>
+                    left-4 sm:left-4 md:left-4 lg:-left-10
+                    top-16 sm:top-14 md:top-12 lg:top-12
+                    w-72 sm:w-96"></div>
 
         <!-- Lines beside the name -->
         <div class="h-4 opacity-50 absolute 
@@ -74,7 +74,7 @@
         <!-- Race -->
         <div class="absolute z-10 serif uppercase text-gray-700 tracking-tagline text-right
                     text-xl break-words
-                    left-4 md:left-5 lg:left-64
+                    left-4 md:left-5 lg:left-80
                     top-32 md:top-32 lg:top-96
                     w-4 lg:w-auto
                     leading-relaxed">

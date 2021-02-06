@@ -23,10 +23,19 @@
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
                     background-size: 75%;`" 
-            class="absolute h-full z-20
-                    left-6 sm:left-8 md:left-8 lg:left-4
-                    w-72 md:w-72 lg:w-96
-                    top-12"></div>
+            class="hidden sm:block absolute h-full z-20
+                    left-12 sm:left-6 md:left-0 lg:-left-4
+                    top-16 sm:top-12 md:top-12 lg:top-8
+                    w-72 sm:w-96"></div>
+        <div :style="`background-image: url(${charData.char}); 
+                    background-repeat: no-repeat;
+                    background-position-y: 0rem;
+                    background-size: 95%;`" 
+            class="block sm:hidden absolute h-full z-20
+                    left-8 sm:left-6 md:left-0 lg:-left-4
+                    top-16 sm:top-12 md:top-12 lg:top-8
+                    w-72 sm:w-96"></div>
+
         <h2 class="absolute serif uppercase text-gray-700 leading-tight tracking-name z-10
                     text-2xl sm:text-5xl
                     w-32 sm:w-auto
@@ -56,7 +65,7 @@
             {{ charData.name.split(' ')[0] }}
         </h1>
         <p class="absolute z-10 serif text-gray-700 tracking-widest
-                    text-left md:text-right
+                    text-left sm:text-right
                     mt-4 md:mt-0
                     text-sm md:text-base
                     sm:left-64 md:left-52 lg:left-64

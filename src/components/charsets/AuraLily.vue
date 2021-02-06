@@ -21,10 +21,18 @@
                     background-repeat: no-repeat;
                     background-position-y: 0rem;
                     background-size: 100%;`" 
-            class="absolute h-full z-20
-                    left-8 sm:-left-2 md:left-8
-                    w-72 sm:w-96
-                    top-16"></div>
+            class="hidden sm:block absolute h-full z-20
+                    left-0 sm:left-4 md:left-4 lg:left-0
+                    top-12 sm:top-16 md:top-16 lg:top-8
+                    w-72 sm:w-96"></div>
+        <div :style="`background-image: url(${charData.char}); 
+                    background-repeat: no-repeat;
+                    background-position-y: 0rem;
+                    background-size: 110%;`" 
+            class="block sm:hidden absolute h-full z-20
+                    left-4 sm:left-4 md:left-4 lg:left-0
+                    top-16 sm:top-16 md:top-16 lg:top-8
+                    w-72 sm:w-96"></div>
 
         <!-- Lines beside the name -->
         <div class="opacity-50 absolute
