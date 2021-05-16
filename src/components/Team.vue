@@ -1,125 +1,77 @@
 <template>
     <div id="team" class="w-full py-12">
         <div class="max-w-6xl mx-auto">
-            <h5 class="text-4xl sans-serif text-center">
+            <h5 class="text-4xl text-center sans-serif">
                 Our Team
             </h5>
         </div>
 
         <div class="max-w-2xl mx-auto">
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-0 sm:gap-4 mt-12 justify-center">
+            <div class="grid justify-center grid-cols-1 gap-0 mt-12 sm:grid-cols-3 sm:gap-4">
                 <button :style="(gen1Toggled) ? toggledButtonColor : ''"
                         @click="toggleGen1()" 
-                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                                focus:outline-none
-                                rounded-t-none sm:rounded-t-md
-                                text-xs sm:text-base">
+                        class="w-full col-span-1 px-6 py-3 text-xs font-semibold transition duration-300 ease-in-out border-t border-l border-r rounded-t-none hover:bg-gray-100 focus:outline-none sm:rounded-t-md sm:text-base">
                     4R Gen 1
                 </button>
                 <button :style="(gen2Toggled) ? toggledButtonColor : ''"
                         @click="toggleGen2()" 
-                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                                focus:outline-none
-                                rounded-t-none sm:rounded-t-md
-                                text-xs sm:text-base">
+                        class="w-full col-span-1 px-6 py-3 text-xs font-semibold transition duration-300 ease-in-out border-t border-l border-r rounded-t-none hover:bg-gray-100 focus:outline-none sm:rounded-t-md sm:text-base">
                     4R Gen 2
                 </button>
                 <button :style="(utaiteToggled) ? toggledButtonColor : ''"
                         @click="toggleUtaite()" 
-                        class="col-span-1 w-full px-6 py-3 font-semibold transition ease-in-out duration-300 hover:bg-gray-100 border-l border-t border-r
-                                focus:outline-none
-                                rounded-t-none sm:rounded-t-md
-                                text-xs sm:text-base">
+                        class="w-full col-span-1 px-6 py-3 text-xs font-semibold transition duration-300 ease-in-out border-t border-l border-r rounded-t-none hover:bg-gray-100 focus:outline-none sm:rounded-t-md sm:text-base">
                     Utaite
                 </button>
             </div>
         </div>
         <div class="border-t border-b">
-            <div class="grid grid-cols-12 grid-flow-row max-w-7xl mx-auto" style="height: auto;">
-                <div class="border-l
-                            border-t sm:border-t-0
-                            border-b sm:border-b-0 
-                            border-r-0 sm:border-r
-                            lg:col-span-1 sm:col-span-2 col-span-12
-                            py-12 sm:py-0
-                            h-20 sm:h-full
-                            relative
-                            flex items-center
-                            bg-white
-                            z-20">
-                    <h4 class="absolute text-3xl serif text-gray-200 break-all uppercase
-                                w-full sm:w-4
-                                leading-normal sm:leading-relaxed
-                                tracking-widest
-                                top-0 sm:top-4
-                                -left-1 sm:left-4">
+            <div class="grid grid-flow-row grid-cols-12 mx-auto max-w-7xl" style="height: auto;">
+                <div class="relative z-20 flex items-center h-20 col-span-12 py-12 bg-white border-t border-b border-l border-r-0 sm:border-t-0 sm:border-b-0 sm:border-r lg:col-span-1 sm:col-span-2 sm:py-0 sm:h-full">
+                    <h4 class="absolute top-0 w-full text-3xl leading-normal tracking-widest text-gray-200 uppercase break-all serif sm:w-4 sm:leading-relaxed sm:top-4 -left-1 sm:left-4">
                         4 Reality
                     </h4>
-                    <h6 class="absolute text-lg serif text-gray-200 break-all uppercase
-                                w-full sm:w-4
-                                bottom-0 sm:bottom-4
-                                right-1 sm:right-4
-                                text-right sm:text-left
-                                tracking-widest sm:tracking-normal
-                                leading-normal sm:leading-relaxed">
+                    <h6 class="absolute bottom-0 w-full text-lg leading-normal tracking-widest text-right text-gray-200 uppercase break-all serif sm:w-4 sm:bottom-4 right-1 sm:right-4 sm:text-left sm:tracking-normal sm:leading-relaxed">
                         Members
                     </h6>
-                    <img class="absolute z-0 
-                                transform rotate-90 sm:rotate-0
-                                bottom-4 sm:bottom-2 
-                                left-0 sm:left-2" :src="'./assets/particles/rectangles-dot.png'" alt="rectangles" />
-                    <img class="absolute z-0
-                                transform rotate-90 sm:rotate-0
-                                top-4 sm:top-2 
-                                right-0 sm:right-2" :src="'./assets/particles/rectangles-dot.png'" alt="rectangles" />
+                    <img class="absolute left-0 z-0 transform rotate-90 sm:rotate-0 bottom-4 sm:bottom-2 sm:left-2" :src="'./assets/particles/rectangles-dot.png'" alt="rectangles" />
+                    <img class="absolute right-0 z-0 transform rotate-90 sm:rotate-0 top-4 sm:top-2 sm:right-2" :src="'./assets/particles/rectangles-dot.png'" alt="rectangles" />
 
-                    <div class="absolute flex w-full justify-center items-center
-                                flex-row sm:flex-col"
+                    <div class="absolute flex flex-row items-center justify-center w-full sm:flex-col"
                          v-if="gen1Toggled">
                         <img v-for="(chars, index) in gen1" 
                             :key="index" 
                             :src="chars.avatar"
                             @click="changeGen1(index)"
                             :alt="chars.name"
-                            class="w-16 h-16 object-fit
-                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
-                                    cursor-pointer">
+                            class="w-16 h-16 mr-4 cursor-pointer object-fit last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0">
                     </div>
-                    <div class="absolute flex w-full justify-center items-center
-                                flex-row sm:flex-col"
+                    <div class="absolute flex flex-row items-center justify-center w-full sm:flex-col"
                          v-if="gen2Toggled">
                         <img v-for="(chars, index) in gen2" 
                             :key="index" 
                             :src="chars.avatar"
                             @click="changeGen2(index)"
                             :alt='chars.name'
-                            class="w-16 h-16 object-fit
-                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
-                                    cursor-pointer">
+                            class="w-16 h-16 mr-4 cursor-pointer object-fit last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0">
                     </div>
-                    <div class="absolute flex w-full justify-center items-center
-                                flex-row sm:flex-col"
+                    <div class="absolute flex flex-row items-center justify-center w-full sm:flex-col"
                          v-if="utaiteToggled">
                         <img v-for="(chars, index) in utaite" 
                             :key="index" 
                             :src="chars.avatar"
                             @click="changeUtaiteIndex(index)"
                             :name="chars.name"
-                            class="w-16 h-16 object-fit
-                                    mr-4 last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0
-                                    cursor-pointer">
+                            class="w-16 h-16 mr-4 cursor-pointer object-fit last:mr-0 sm:mr-0 sm:mb-4 sm:last:mb-0">
                     </div>
                 </div>
 
-                <div class="col-span-12 sm:col-span-10 lg:col-span-11
-                            h-screen sm:h-auto
-                            border-r-0 sm:border-r
-                            overflow-hidden" style="height: 625px">
+                <div class="h-screen col-span-12 overflow-hidden border-r-0 sm:col-span-10 lg:col-span-11 sm:h-auto sm:border-r" style="height: 625px">
                     <transition-group
                         enter-active-class="transition-all transition-slowest"
                         leave-active-class="transition-all transition-slowest"
-                        enter-class="opacity-50 scale-0"
+                        enter-class="scale-0 opacity-50"
                         enter-to-class="opacity-100"
                         leave-class="opacity-100"
                         leave-to-class="opacity-50"
@@ -136,6 +88,7 @@
                         <Cyanpile v-if="utaiteIndex == 0 && utaiteToggled" :charData="utaite[0]" />
                         <AuraLily v-if="utaiteIndex == 1 && utaiteToggled" :charData="utaite[1]" />
                         <YuaDeyanara v-if="utaiteIndex == 2 && utaiteToggled" :charData="utaite[2]" />
+                        <Miasviel v-if="utaiteIndex == 3 && utaiteToggled" :charData="utaite[3]" />
                     </transition-group>
                 </div>
             </div>
@@ -149,6 +102,7 @@
     import Cyanpile from "./charsets/Cyanpile.vue";
     import Karen from "./charsets/Karen.vue";
     import KurokamiItsuki from "./charsets/KurokamiItsuki.vue";
+    import Miasviel from './charsets/Miasviel.vue';
     import MizukiAoi from "./charsets/MizukiAoi.vue";
     import RaihanIkeda from "./charsets/RaihanIkeda.vue";
     import TorayamaZian from "./charsets/TorayamaZian.vue";
@@ -162,6 +116,7 @@
             Cyanpile,
             Karen,
             KurokamiItsuki,
+            Miasviel,
             MizukiAoi,
             RaihanIkeda,
             TorayamaZian,
@@ -404,7 +359,7 @@
                         height: '145cm',
                         birthDate: 'January 18th',
                         age: '',
-                    }
+                    },
                 ],
                 utaite: [
                     {
@@ -502,6 +457,38 @@
                         height: 'Unkown',
                         birthDate: 'Unkown',
                         age: 'Unkown',
+                    },
+                    {
+                        name: 'Miasviel',
+                        avatar: './assets/avatar/miasviel.png',
+                        char: './assets/characters/miasviel.webp',
+                        colorScheme: '#CE90E0',
+                        bio: "",
+                        race: 'Human (?)',
+                        palettes: [
+                            '#CE90E0',
+                            '#997DBC',
+                            '#4E4B61',
+                            '#B79A92',
+                            '#91746D',
+                        ],
+                        facebook: {
+                            userName: 'Mia',
+                            link: 'web.facebook.com/miasviel',
+                        },
+                        twitter: {
+                            userName: '@miasviel',
+                            link: 'https://twitter.com/miasviel',
+                        },
+                        youtube: {
+                            userName: 'Miasviel Ch. ・ω・「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCbxrjUw-R-vXB8Azvf5UDrw',
+                        },
+                        tagline: '',
+                        motto: '',
+                        height: '148cm',
+                        birthDate: 'April 14th',
+                        age: '???',
                     },
                 ],
                 staff: [
