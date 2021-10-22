@@ -265,6 +265,38 @@
                 ],
                 gen2: [
                     {
+                        name: 'Gill Zuya Lestrange',
+                        avatar: './assets/avatar/gill-zuya-lestrange.png',
+                        char: './assets/characters/gill-zuya-lestrange.webp',
+                        colorScheme: '#9C3942',
+                        bio: "",
+                        race: 'Human',
+                        palettes: [
+                            '#FFFFFF',
+                            '#AF9BB4',
+                            '#3B3A4E',
+                            '#9C3942',
+                            '#762535',
+                        ],
+                        facebook: {
+                            userName: 'Zuya Lestrange',
+                            link: 'https://www.facebook.com/zuya.lestrange',
+                        },
+                        twitter: {
+                            userName: '@Gill_Zuya',
+                            link: 'https://twitter.com/Gill_Zuya',
+                        },
+                        youtube: {
+                            userName: 'Zuya ズヤ Ch.「4 REALITY」',
+                            link: 'https://www.youtube.com/channel/UCs7BXe4mGtUIwnE4oPVKTDw',
+                        },
+                        tagline: '',
+                        motto: '',
+                        height: '',
+                        birthDate: 'August 18th',
+                        age: '',
+                    },
+                    {
                         name: 'Torayama Zian',
                         avatar: './assets/avatar/torayama-zian.png',
                         char: './assets/characters/torayama-zian.webp',
