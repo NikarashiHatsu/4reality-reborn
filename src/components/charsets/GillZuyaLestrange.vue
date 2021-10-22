@@ -41,7 +41,7 @@
                     -left-4 md:left-0
                     opacity-10
                     hidden sm:block" style="letter-spacing: 0.625em" >
-            {{ charData.name.split(' ')[1] }}
+            {{ charData.name.split(' ')[1] + ' ' + charData.name.split(' ')[2] }}
         </h1>
         <p class="absolute z-10 serif text-gray-700 tracking-widest
                     text-left md:text-right
