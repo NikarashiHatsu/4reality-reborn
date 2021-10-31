@@ -8,6 +8,9 @@
     <SocialMedia />
     <Footer />
     <FloatingActionButton class="block sm:hidden" />
+    <a href="https://rioka.uwu.ai/" target="_blank">
+      <img class="fixed z-50 w-32 h-32 transform rotate-45 -bottom-8 -left-8" :src="'/assets/characters/rioka.png'" />
+    </a>
   </div>
 </template>
 
